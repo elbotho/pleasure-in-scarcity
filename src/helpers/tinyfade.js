@@ -50,6 +50,7 @@ Tinyfade.prototype.goto = function (c) {
   // Update current
   this.c = c;
 };
+
 Tinyfade.prototype.next = function () {
   if (!this.e) throw new Error("This Tinyfade instance has been destroyed.");
 
@@ -61,6 +62,7 @@ Tinyfade.prototype.prev = function () {
   if (!this.e) throw new Error("This Tinyfade instance has been destroyed.");
 
   let e = this.c.previousElementSibling || this.e.lastElementChild;
+  if (!e || e.tagName == "STYLE") return false;
   this.goto(e);
 };
 Tinyfade.prototype.pause = function () {

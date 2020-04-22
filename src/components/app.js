@@ -5,8 +5,14 @@ import { Router, route } from "preact-router";
 import Header from "./header";
 import Gallery from "./gallery";
 
+/*
+TODO: lazyload images
+        https://github.com/tuupola/lazyload or https://github.com/aFarkas/lazysizes or custom
+      code split chapters?
+      maybe even use code spliting for image routes?
+*/
+
 // Code-splitting is automated for routes
-// simplify routes
 const images = [
   {
     title: "Smoke Pipe",
