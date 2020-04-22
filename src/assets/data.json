@@ -1,0 +1,15 @@
+{
+  "log": {
+    "mALoad": "800",
+    "time": "14-45",
+    "mABattery": "190",
+    "mVBattery": "12642",
+    "deciWhToday": "4",
+    "maxPowerToday": "17",
+    "daysCount": "25",
+    "date": "2020-04-13",
+    "powerPV": "13",
+    "mVPV": "18480",
+    "id": "200413-14-45"
+  }
+}
