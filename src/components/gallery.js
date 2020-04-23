@@ -71,7 +71,9 @@ const Gallery = ({ images, esm, nextChapter }) => {
 
   useEffect(() => {
     setFilesize(
-      document.querySelector(`.tinyfade > img[data-index="${currentIndex}"]`)
+      document.querySelector(
+        `.tinyfade > picture[data-index="${currentIndex}"]`
+      )
     );
   }, [esm]);
 
@@ -81,7 +83,8 @@ const Gallery = ({ images, esm, nextChapter }) => {
   }
 
   function setFilesize(elem) {
-    fetch(elem.src).then((response) => {
+    const image = elem.querySelector("img");
+    fetch(image.src).then((response) => {
       const size = Math.round(response.headers.get("content-length") / 1000);
       document.getElementById("caption-size").innerHTML = size + " kb";
     });
@@ -93,13 +96,21 @@ const Gallery = ({ images, esm, nextChapter }) => {
     <figure class="gallery">
       <div class="tinyfade">
         {images.map((image, index) => (
-          <img
-            key={image.title}
-            data-index={index}
-            alt={image.title}
-            src={folder + image.fileName}
-            style={image.extraStyle}
-          />
+          <picture key={image.title} data-index={index}>
+            <source
+              srcset={folder + image.fileName + ".webp"}
+              type="image/webp"
+            />
+            <source
+              srcset={folder + image.fileName + ".jpg"}
+              type="image/jpeg"
+            />
+            <img
+              src={folder + image.fileName + ".jpg"}
+              alt={image.title}
+              style={image.extraStyle}
+            />
+          </picture>
         ))}
       </div>
       <a

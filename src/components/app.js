@@ -10,19 +10,21 @@ TODO: lazyload images
         https://github.com/tuupola/lazyload or https://github.com/aFarkas/lazysizes or custom
       code split chapters?
       maybe even use code spliting for image routes?
+
+      maybe rebuild slider functions in react?
 */
 
 // Code-splitting is automated for routes
 const images = [
   {
     title: "Smoke Pipe",
-    fileName: "demo.webp",
+    fileName: "demo",
     extraStyle: "object-position: 50% 30%;",
     caption: "This is an image Caption yeah",
   },
   {
     title: "Sencond Pipe",
-    fileName: "demo.webp",
+    fileName: "demo",
     extraStyle: "object-position: 20% 10%;",
     caption: "Caption Two",
   },

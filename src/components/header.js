@@ -2,8 +2,8 @@
 // import { Link } from "preact-router/match";
 
 const Header = ({ mVBattery, mALoad, mVPV, esmButton }) => {
-  const voltageString = (mVBattery / 1000).toFixed(1) + "V ";
-  const loadString = (mALoad * 12) / 1000 + "W ";
+  const voltageString = (mVBattery / 1000).toFixed(1) + "V";
+  const loadString = (mALoad * 12) / 1000 + "W";
 
   const VPV = mVPV / 1000;
   const sunString = VPV < 4 ? "🌔 Night" : VPV < 13 ? "🌥 Cloudy" : "🌞Sunny";

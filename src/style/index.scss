@@ -117,12 +117,16 @@ figure.gallery {
   box-sizing: border-box;
 
   .tinyfade > * {
-    height: calc(80vh - #{$header-height});
     pointer-events: none;
-    object-fit: cover;
 
-    @media (min-width: 800px) {
-      height: calc(100vh - #{$header-height});
+    img {
+      height: calc(80vh - #{$header-height});
+      object-fit: cover;
+      width: 100%;
+
+      @media (min-width: 800px) {
+        height: calc(100vh - #{$header-height});
+      }
     }
   }
 
