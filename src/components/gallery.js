@@ -102,12 +102,8 @@ const Gallery = ({ images, esm, nextChapter }) => {
               srcset={folder + image.fileName + ".webp"}
               type="image/webp"
             />
-            */} 
+           */}  
            {/* When using .jpg files:*/}
-            <source
-              srcset={folder + image.fileName + ".jpg"}
-              type="image/jpeg"
-            />
             <img
               src={folder + image.fileName + ".jpg"}
               alt={image.title}
@@ -121,7 +117,7 @@ const Gallery = ({ images, esm, nextChapter }) => {
         id="gallery-right"
         onClick={onRightArrowClick}
       >
-        →
+        ⇾
       </a>
       <figcaption>
         <p id="caption-text">{images[currentIndex].caption}</p>

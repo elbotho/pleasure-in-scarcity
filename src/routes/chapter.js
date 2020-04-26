@@ -1,35 +1,24 @@
 export const chapterContent = [
   { title: "Hidden Chapter 0", content: "Honestly what are you doing here?" },
   {
-    title: "The Chapter Title",
+    title: "The future is scarcity",
     content: [
-      <p>
-        Scarcity refers to a gap between limited resources and theoretically
-        limitless wants.[2] The notion of scarcity is that there is never enough
-        (of something) to satisfy all conceivable human wants, even at advanced
-        states of human technology. Scarcity involves making a sacrifice—giving
-        something up, or making a trade-off—in order to obtain more of the
-        scarce resource that is wanted.[3] The condition of scarcity in the real
-        world necessitates competition for scarce resources, and competition
-        occurs "when people strive to meet the criteria that are being used to
-        determine who gets what".[3]:p. 105 The price system, or market prices,
-        are one way to allocate scarce resources. "If a society coordinates
-        economic plans on the basis of willingness to pay money, members of that
-        society will [strive to compete] to make money"[3]:p. 105 If other
-        criteria are used, we would expect to see competition in terms of those
-        other criteria.[3] For example, although air is more important to us
-        than gold, it is less scarce simply because the production cost of air
-        is zero. Gold on the other hand has a high production cost. It has to be
-        found and processed, both of which require a great deal of resources.
-        Additionally, scarcity implies that not all of society's goals can be
-        pursued at the same time; trade-offs are made of one goal against
-        others. In an influential 1932 essay, Lionel Robbins defined economics
-        as "the science which studies human behavior as a relationship between
-        ends and scarce means which have alternative uses".[4] In cases of
-        monopoly or monopsony an artificial scarcity can be created. Scarcity
-        can also occur through stockpiling, either as an attempt to corner the
-        market or for other reasons. Temporary scarcity can be caused by (and
-        cause) panic buying.
+      <p class="pleasure-text">
+        Soft smoke rises from the chimney. Then it disappears as the oven reaches 
+        its temperature, the air flow becomes audible, a roaring sounds from within 
+        the metal that gives the rocket stove its name. While the thermometer is 
+        rising in small increments, just barely climbing up the 200° mark, I get the dough ready. 
+      </p>,
+      <p class="text">
+        Rarely has there been a moment in recent Western memory when we have become aware 
+        of the scarcity of things. While I‘m writing this text under the shadow of the Corona 
+        crisis, supermarket shelves are empty and access to basic commodities is restricted. 
+        Already now we know that after this, the world will not be the same. 
+      </p>,
+      <p class="pleasure-text">
+        The dough was rising over night outside in the fresh April air. Seemingly worthless resources 
+        like water, flour and salt become alive, fermenting into a sculpture full of sensational 
+        potential, softly resisting the touch of my fingers.
       </p>,
     ],
   },
