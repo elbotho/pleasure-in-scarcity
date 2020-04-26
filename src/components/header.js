@@ -1,14 +1,18 @@
 // import { h } from "preact";
 // import { Link } from "preact-router/match";
 
-const Header = ({ mVBattery, mALoad, mVPV, esmButton }) => {
-  const voltageString = (mVBattery / 1000).toFixed(1) + "V";
-  const loadString = (mALoad * 12) / 1000 + "W";
+const Header = ({ mVBattery, mALoad, mVPV, esmButton, powerPV}) => {
+  const voltageString = (mVBattery / 1000).toFixed(2) + "V";
+  const loadString = ((mALoad * mVBattery)/1000000).toFixed(2) + "W";
+  const solarString = powerPV + "W";
 
   const VPV = mVPV / 1000;
-  const sunString = VPV < 4 ? "🌔 Night" : VPV < 13 ? "🌥 Cloudy" : "🌞Sunny";
+  {/*
+    const sunString = VPV < 4 ? "🌔 Night" : VPV < 13 ? "🌥 Cloudy" : "🌞Sunny";
+*/}
+  const sunString = VPV < 4 ? "solar status: off, nighttime" : VPV < 14 ? "solar status: off, overcast" : "solar status: on | production: " +solarString;
   const statusString =
-    VPV > 13 ? "Status: charging" : "Status: draining battery";
+    VPV > 14 ? "battery status: charging" : "status: running on battery";
 
   return (
     <header>
@@ -17,13 +21,16 @@ const Header = ({ mVBattery, mALoad, mVPV, esmButton }) => {
 
         <div>
           <span id="stats-sun">{sunString}</span>
+          <span id="stats-sun">{statusString}</span>
           <dl>
             <dt role="img" title="Battery Charge">
-              🔋
+              {/*🔋*/}
+              battery:
             </dt>
             <dd id="stats-battery">{voltageString}</dd>
             <dt role="img" title="Server load">
-              ⚡
+              {/*⚡*/}
+              server load: 
             </dt>
             <dd id="stats-load">{loadString}</dd>
           </dl>
