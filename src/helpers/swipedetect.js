@@ -22,6 +22,8 @@ function getXandY(e) {
 }
 
 function handleTouchStart(e) {
+  console.log(e.target.tagName);
+  if (e.target.tagName == "A") return;
   const pointerPos = getXandY(e);
   xDown = pointerPos[0];
   yDown = pointerPos[1];
@@ -40,6 +42,7 @@ function handleTouchMove(func1, func2, e) {
   var yDiff = yDown - yUp;
 
   if (Math.abs(xDiff) < Math.abs(yDiff)) return;
+  // if (Math.abs(xDiff) > 5) return;
 
   if (xDiff > 0) {
     func1();
