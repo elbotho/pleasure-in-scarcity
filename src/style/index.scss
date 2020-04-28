@@ -143,6 +143,16 @@ header .stats {
   }
 }
 
+.explanation {
+  position: absolute;
+  top: $stats-bar-height;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: $side-padding;
+  text-align: center;
+}
+
 figure.gallery {
   margin: 0;
   padding: 0;

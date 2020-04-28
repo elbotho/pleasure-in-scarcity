@@ -17,7 +17,6 @@ const Chapter = ({ index, esm, goToNextChapter }) => {
       })
       .catch(function (err) {
         console.warn("Something went wrong.", err);
-        //todo: just route to landing?
         route("/", true); //replace
       });
   }, [index]);

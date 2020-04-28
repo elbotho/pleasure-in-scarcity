@@ -17,7 +17,6 @@ TODO: lazyload images
 import Home from "../routes/home";
 // import Chapter from "../routes/chapter";
 import Chapter from "../routes/chapter";
-import Solar from "../routes/solar";
 
 export default function App(props) {
   const [energySaveMode, setEnergySaveMode] = useState(false);
