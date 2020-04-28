@@ -22,7 +22,6 @@ function getXandY(e) {
 }
 
 function handleTouchStart(e) {
-  console.log(e.target.tagName);
   if (e.target.tagName == "A") return;
   const pointerPos = getXandY(e);
   xDown = pointerPos[0];
