@@ -5,14 +5,16 @@ const Header = ({ mVBattery, mALoad, mVPV, esmButton, powerPV}) => {
   const voltageString = (mVBattery / 1000).toFixed(2) + "V";
   const loadString = ((mALoad * mVBattery)/1000000).toFixed(2) + "W";
   const solarString = powerPV + "W";
-
+  const batteryString = ((mVBattery-10800)/(14660-10800)*100).toFixed(0) + " %";
   const VPV = mVPV / 1000;
   {/*
     const sunString = VPV < 4 ? "🌔 Night" : VPV < 13 ? "🌥 Cloudy" : "🌞Sunny";
 */}
   const sunString = VPV < 4 ? "solar status: off, nighttime" : VPV < 14 ? "solar status: off, overcast" : "solar status: on | production: " +solarString;
   const statusString =
-    VPV > 14 ? "battery status: charging" : "status: running on battery";
+    VPV > 14 ? "battery status: charging "+batteryString : "battery status: discharging "+batteryString;
+
+
 
   return (
     <header>

@@ -97,13 +97,16 @@ const Gallery = ({ images, esm, nextChapter }) => {
       <div class="tinyfade">
         {images.map((image, index) => (
           <picture key={image.title} data-index={index}>
-           {/* When using .webp files:
+            {/*
             <source
               srcset={folder + image.fileName + ".webp"}
               type="image/webp"
             />
-           */}  
-           {/* When using .jpg files:*/}
+            When using .jpg files:*/}
+            <source
+              srcset={folder + image.fileName + ".jpg"}
+              type="image/jpeg"
+            />
             <img
               src={folder + image.fileName + ".jpg"}
               alt={image.title}

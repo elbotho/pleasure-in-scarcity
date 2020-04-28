@@ -56,6 +56,7 @@ const images = [
 
 import Home from "../routes/home";
 import Chapter from "../routes/chapter";
+import Solar from "../routes/solar";
 
 export default function App() {
   const [energySaveMode, setEnergySaveMode] = useState(false);
@@ -123,6 +124,7 @@ export default function App() {
       <Router onChange={handleRoute}>
         <Home path="/" />
         <Chapter path="/chapter/:number" />
+        <Solar path="/solar" />
       </Router>
     </div>
   );
