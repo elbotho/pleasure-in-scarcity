@@ -20,7 +20,7 @@ const Chapter = ({ index, esm, goToNextChapter }) => {
         //todo: just route to landing?
         route("/", true); //replace
       });
-  }, []);
+  }, [index]);
 
   return (
     <>
@@ -32,7 +32,8 @@ const Chapter = ({ index, esm, goToNextChapter }) => {
 
       <main>
         <h1>
-          Chapter {index}: {chapterData !== {} ? chapterData.title : "…"}
+          {index !== 0 && <>Chapter {index}: </>}
+          {chapterData !== {} ? chapterData.title : "…"}
         </h1>
         {chapterData.content ? <Markdown>{chapterData.content}</Markdown> : "…"}
         <ChapterNav currentChapter={parseInt(index)} />

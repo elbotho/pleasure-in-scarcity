@@ -44,7 +44,6 @@ export default function App(props) {
   }, []);
 
   function handleRoute(e) {
-    console.log(e.current.props.index);
     if (e.current.props.index !== undefined)
       setCurrentChapter(parseInt(e.current.props.index));
   }
