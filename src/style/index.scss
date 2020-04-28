@@ -1,0 +1,223 @@
+$body-color: #333;
+$stats-bar-height: 1.8rem;
+$menu-bar-height: 3.6rem;
+$side-padding: 0.8rem;
+$header-height: $stats-bar-height + $menu-bar-height;
+
+@import "tinyfade";
+
+html {
+  font-size: 14px;
+
+  ::selection {
+      background-color: #000;
+      color: #fff;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+body {
+  color: $body-color;
+  font-family: "Times New Roman", serif;
+  padding: calc(80vh + 2rem) $side-padding 5rem $side-padding;
+  @media (min-width: 800px) {
+    padding: 6rem 1rem 5rem calc(100vw - 29rem);
+  }
+}
+
+.pleasure-text{
+  font-style: italic;
+  text-align: right;
+  padding-left: 15%;
+}
+
+.text{
+  font-style: normal;
+  text-align: left;
+  padding-right: 15%;
+}
+
+main {
+  line-height: 145%;
+}
+
+p, h1{
+  padding-bottom: 2rem;
+}
+
+a{
+  cursor: crosshair;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  border-bottom: 1px solid #000;
+  // background-color: #fff;
+  @media (min-width: 800px) {
+    position: fixed;
+  }
+}
+
+header .menu-bar {
+  height: $menu-bar-height;
+  padding: 0 $side-padding;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 800px) {
+    width: calc(100vw - 25.9rem);
+  }
+
+  h1 {
+    margin: 0;
+    line-height: $menu-bar-height;
+  }
+
+  .button {
+    margin-top: 0.1rem;
+    letter-spacing: .04rem;
+    font-family: Arial, sans-serif;
+    text-transform: lowercase;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: none;
+    text-decoration: none;
+    padding: 0.3rem 0.4rem;
+    margin: auto 0;
+    cursor: crosshair;
+
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+  }
+}
+
+header .stats {
+  height: $stats-bar-height;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 0 $side-padding;
+  line-height: $stats-bar-height;
+  text-align: right;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+
+  dl,
+  dd,
+  dt {
+    margin: 0;
+    padding-right: 0.5rem;
+    display: inline;
+  }
+
+span{
+  padding-right: 1rem;
+}
+
+  dt[role="img"] {
+    margin-right: -0.2rem;
+    margin-left: 0.4rem;
+  }
+}
+
+figure.gallery {
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: $header-height;
+  box-sizing: border-box;
+  border-right: 1px solid #000;
+
+  .tinyfade > * {
+    pointer-events: none;
+
+
+
+    img {
+      height: calc(80vh - #{$header-height});
+      object-fit: cover;
+      width: 100%;
+
+      @media (min-width: 800px) {
+        height: calc(100vh - #{$header-height});
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    position: fixed;
+    bottom: 0;
+    right: auto;
+    height: 100vh;
+    width: calc(100% - 30rem);
+  }
+
+  figcaption {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    height: 3.6rem;
+    background-color: #ffffff;
+    color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 $side-padding;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    line-height: 140%;
+    border-top: 1px solid #000;
+  }
+}
+
+.gallery-arrow {
+  color: #fff;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  border-radius: 2rem;
+  background: none;
+  width: 4rem;
+  height: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+
+  // &.left {
+  //   left: $side-padding;
+  // }
+
+  &.right {
+    right: $side-padding;
+  }
+}

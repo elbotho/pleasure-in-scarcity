@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: src/assets/images
+public_folder: /assets/images
+collections:
+  - name: "chapters"
+    label: "Chapters"
+    label_singular: "Chapter"
+    folder: "/src/assets/chapters"
+    create: true
+    extension: "json"
+    editor:
+      preview: false
+    slug: "{{chapterNum}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          name: "chapterNum",
+          label: "Chapter Number",
+          widget: "number",
+          min: 1,
+          valueType: "int",
+        }
+      - { label: "Content", name: "content", widget: "markdown" }
+      - {
+          label: "Images",
+          name: "galleryImages",
+          widget: "list",
+          required: false,
+          field:
+            {
+              label: "Image",
+              name: "image",
+              widget: "object",
+              required: false,
+              fields:
+                [
+                  { label: "Img", name: "src", widget: "image" },
+                  {
+                    label: Caption,
+                    name: caption,
+                    widget: markdown,
+                    required: false,
+                  },
+                ],
+            },
+        }
