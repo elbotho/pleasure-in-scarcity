@@ -1,0 +1,12 @@
+{
+  "title": "Chapterplaceholder 2",
+  "chapterNum": 2,
+  "content": "This is just a placeholder",
+  "galleryImages": [
+    {
+      "image": {
+        "src": "/assets/images/dokumentation_designonwheels_02.jpg"
+      }
+    }
+  ]
+}
