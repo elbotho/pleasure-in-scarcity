@@ -1,8 +1,15 @@
 import { useState, useEffect } from "preact/hooks";
 import Markdown from "markdown-to-jsx";
 
-const Header = ({ mVBattery, mALoad, mVPV, esmButton, powerPV }) => {
-  const [showExplanation, setShowExplanation] = useState(true);
+const Header = ({
+  mVBattery,
+  mALoad,
+  mVPV,
+  esmButton,
+  powerPV,
+  initialShowNotice,
+}) => {
+  const [showExplanation, setShowExplanation] = useState(initialShowNotice);
 
   const voltageString = (mVBattery / 1000).toFixed(2) + "V";
   const loadString = ((mALoad * mVBattery) / 1000000).toFixed(2) + "W";

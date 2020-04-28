@@ -65,10 +65,10 @@ export default function App(props) {
       route("/");
     }
   }
-
   return (
     <div id="app">
       <Header
+        initialShowNotice={currentChapter === 0}
         mVBattery={serverLog.mVBattery}
         mALoad={serverLog.mALoad}
         mVPV={serverLog.mVPV}
