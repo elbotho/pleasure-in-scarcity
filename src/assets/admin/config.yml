@@ -19,7 +19,6 @@ collections:
           name: "chapterNum",
           label: "Chapter Number",
           widget: "number",
-          min: 1,
           valueType: "int",
         }
       - { label: "Content", name: "content", widget: "markdown" }
