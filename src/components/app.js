@@ -21,6 +21,7 @@ import Solar from "../routes/solar";
 
 export default function App(props) {
   const [energySaveMode, setEnergySaveMode] = useState(false);
+  const [currentChapter, setCurrentChapter] = useState(0);
 
   const [serverLog, setServerLog] = useState({
     mVBattery: 0,
@@ -30,7 +31,6 @@ export default function App(props) {
   });
 
   useEffect(() => {
-    console.log("getting server log.");
     fetch("/assets/data.json")
       .then(function (response) {
         return response.json();
@@ -44,7 +44,8 @@ export default function App(props) {
   }, []);
 
   function handleRoute(e) {
-    // console.log(e);
+    if (e.current.props.index !== undefined)
+      setCurrentChapter(parseInt(e.current.props.index));
   }
 
   function onEsmButtonClick(e) {
@@ -52,7 +53,7 @@ export default function App(props) {
     setEnergySaveMode(!energySaveMode);
   }
 
-  function nextChapter() {
+  function goToNextChapter() {
     const pathParts = location.pathname.split("/");
 
     if (pathParts[1] !== "chapter") route("/chapter/1");
@@ -82,11 +83,16 @@ export default function App(props) {
         }
       />
       <Router onChange={handleRoute}>
-        <Home path="/" />
+        <Chapter
+          path="/"
+          esm={energySaveMode}
+          goToNextChapter={goToNextChapter}
+          index={0}
+        />
         <Chapter
           path="/chapter/:index"
           esm={energySaveMode}
-          nextChapter={nextChapter}
+          goToNextChapter={goToNextChapter}
         />
       </Router>
     </div>

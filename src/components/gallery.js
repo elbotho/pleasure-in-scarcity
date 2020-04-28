@@ -5,14 +5,13 @@ import Tinyfade from "../helpers/tinyfade";
 import swipeDetect from "../helpers/swipedetect";
 
 //TODO: tinyfade bug with style element when using prev?
-const Gallery = ({ images, esm, nextChapter }) => {
+const Gallery = ({ images, esm, goToNextChapter }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [TinyFade, setTinyFade] = useState(0);
 
   if (!images) return "…";
 
   useEffect(() => {
-    console.log("init gallery");
     let tf = new Tinyfade(
       ".tinyfade", // Element
       -1, // interval in ms (-1 for manual mode, default = 5000)
@@ -64,7 +63,7 @@ const Gallery = ({ images, esm, nextChapter }) => {
       // console.log(images.length - 1);
 
       if (index === 0 && lastIndex === images.length - 1) {
-        nextChapter();
+        goToNextChapter();
       }
 
       setFilesize(current);
@@ -84,11 +83,18 @@ const Gallery = ({ images, esm, nextChapter }) => {
     TinyFade.next();
   }
 
+  function onLeftArrowClick(e) {
+    e.preventDefault();
+    TinyFade.prev();
+  }
+
   function setFilesize(elem) {
     const image = elem.querySelector("img");
     fetch(image.src).then((response) => {
       const size = Math.round(response.headers.get("content-length") / 1000);
-      document.getElementById("caption-size").innerHTML = size + " kb";
+      const sizeDisplay = document.getElementById("caption-size");
+      if (!sizeDisplay) return;
+      sizeDisplay.innerHTML = size + " kb";
     });
   }
 
@@ -111,6 +117,15 @@ const Gallery = ({ images, esm, nextChapter }) => {
           );
         })}
       </div>
+      {currentIndex !== 0 && (
+        <a
+          class="gallery-arrow left"
+          id="gallery-left"
+          onClick={onLeftArrowClick}
+        >
+          ⇽
+        </a>
+      )}
       <a
         class="gallery-arrow right"
         id="gallery-right"

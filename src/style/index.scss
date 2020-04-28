@@ -10,10 +10,9 @@ html {
   font-size: 14px;
 
   ::selection {
-      background-color: #000;
-      color: #fff;
+    background-color: #000;
+    color: #fff;
   }
-
 }
 
 @media screen and (min-width: 1000px) {
@@ -31,13 +30,13 @@ body {
   }
 }
 
-.pleasure-text{
+.pleasure-text {
   font-style: italic;
   text-align: right;
   padding-left: 15%;
 }
 
-.text{
+.text {
   font-style: normal;
   text-align: left;
   padding-right: 15%;
@@ -47,11 +46,12 @@ main {
   line-height: 145%;
 }
 
-p, h1{
+p,
+h1 {
   padding-bottom: 2rem;
 }
 
-a{
+a {
   cursor: crosshair;
 }
 
@@ -88,27 +88,27 @@ header .menu-bar {
     margin: 0;
     line-height: $menu-bar-height;
   }
+}
 
-  .button {
-    margin-top: 0.1rem;
-    letter-spacing: .04rem;
-    font-family: Arial, sans-serif;
-    text-transform: lowercase;
-    font-size: 0.8rem;
-    font-weight: normal;
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: none;
-    text-decoration: none;
-    padding: 0.3rem 0.4rem;
-    margin: auto 0;
-    cursor: crosshair;
+.button {
+  margin-top: 0.1rem;
+  letter-spacing: 0.04rem;
+  font-family: Arial, sans-serif;
+  text-transform: lowercase;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: none;
+  text-decoration: none;
+  padding: 0.3rem 0.4rem;
+  margin: auto 0;
+  cursor: crosshair;
 
-    &:hover {
-      color: #fff;
-      background-color: #000;
-    }
+  &:hover {
+    color: #fff;
+    background-color: #000;
   }
 }
 
@@ -133,9 +133,9 @@ header .stats {
     display: inline;
   }
 
-span{
-  padding-right: 1rem;
-}
+  span {
+    padding-right: 1rem;
+  }
 
   dt[role="img"] {
     margin-right: -0.2rem;
@@ -158,8 +158,6 @@ figure.gallery {
 
   .tinyfade > * {
     pointer-events: none;
-
-
 
     img {
       height: calc(80vh - #{$header-height});
@@ -213,11 +211,18 @@ figure.gallery {
   cursor: pointer;
   user-select: none;
 
-  // &.left {
-  //   left: $side-padding;
-  // }
+  &.left {
+    left: $side-padding;
+  }
 
   &.right {
     right: $side-padding;
   }
+}
+
+main footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 4rem;
 }
