@@ -2,12 +2,6 @@
   "galleryImages": [
     {
       "image": {
-        "caption": "My caption",
-        "src": "/assets/images/pleasure1.jpg"
-      }
-    },
-    {
-      "image": {
         "caption": "Another caption",
         "src": "/assets/images/pleasure2.jpg"
       }
@@ -27,5 +21,5 @@
   ],
   "content": "<div style=\"text-align: right\">*Soft smoke rises from the chimney. Then it disappears as the oven reaches its temperature, the air flow becomes audible, a roaring sounds from within the metal that gives the rocket stove its name. While the thermometer is rising in small increments, just barely climbing up the 200° mark, I get the dough ready.*</div>\n\nRarely has there been a moment in recent Western memory when we have become aware of the scarcity of things. While I‘m writing this text under the shadow of the Corona crisis, supermarket shelves are empty and access to basic commodities is restricted. Already now we know that after this, the world will not be the same.\n\n<div style=\"text-align: right\">*The dough was rising over night outside in the fresh April air. Seemingly worthless resources like water, flour and salt become alive, fermenting into a sculpture full of sensational potential, softly resisting the touch of my fingers.*</div>",
   "chapterNum": 1,
-  "title": "The future is scarcity"
+  "title": "The future is <b>scarcity</b>"
 }
