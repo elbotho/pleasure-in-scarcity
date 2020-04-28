@@ -5,14 +5,14 @@ const Header = ({ mVBattery, mALoad, mVPV, esmButton, powerPV}) => {
   const voltageString = (mVBattery / 1000).toFixed(2) + "V";
   const loadString = ((mALoad * mVBattery)/1000000).toFixed(2) + "W";
   const solarString = powerPV + "W";
-  const batteryString = ((mVBattery-10800)/(14660-10800)*100).toFixed(0) + " %";
+  const batteryString = ((mVBattery-10800)/(14660-10800)*100).toFixed(0) + "%";
   const VPV = mVPV / 1000;
   {/*
     const sunString = VPV < 4 ? "🌔 Night" : VPV < 13 ? "🌥 Cloudy" : "🌞Sunny";
 */}
-  const sunString = VPV < 4 ? "solar status: off, nighttime" : VPV < 14 ? "solar status: off, overcast" : "solar status: on | production: " +solarString;
+  const sunString = VPV < 4 ? "solar: off, nighttime" : VPV < 14 ? "solar: off, overcast" : "solar: on | " +solarString;
   const statusString =
-    VPV > 14 ? "battery status: charging "+batteryString : "battery status: discharging "+batteryString;
+    VPV > 14 ? "battery: charging "+batteryString : "battery: discharging "+batteryString;
 
 
 
@@ -23,7 +23,7 @@ const Header = ({ mVBattery, mALoad, mVPV, esmButton, powerPV}) => {
 
         <div>
           <span id="stats-sun">{sunString}</span>
-          <span id="stats-sun">{statusString}</span>
+          {/*<span id="stats-sun">{statusString}</span>*/}
           <dl>
             <dt role="img" title="Battery Charge">
               {/*🔋*/}
