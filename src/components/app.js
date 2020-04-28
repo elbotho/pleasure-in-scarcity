@@ -52,6 +52,11 @@ export default function App(props) {
     setEnergySaveMode(!energySaveMode);
   }
 
+  useEffect(() => {
+    if (energySaveMode) document.body.classList.add("esm");
+    else document.body.classList.remove("esm");
+  }, [energySaveMode]);
+
   function goToNextChapter() {
     const pathParts = location.pathname.split("/");
 

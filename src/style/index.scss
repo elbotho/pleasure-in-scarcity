@@ -30,6 +30,11 @@ body {
   }
 }
 
+body.esm {
+  background-color: $body-color;
+  color: #fff;
+}
+
 .pleasure-text {
   font-style: italic;
   text-align: right;
