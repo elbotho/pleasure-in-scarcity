@@ -22,6 +22,8 @@ const Chapter = ({ index, esm, goToNextChapter }) => {
       });
   }, [index]);
 
+  const chapterNumText = index === 0 ? "" : `Chapter ${index}: `;
+  const chapterTitle = chapterData !== {} ? chapterData.title : "…";
   return (
     <>
       <Gallery
@@ -31,10 +33,9 @@ const Chapter = ({ index, esm, goToNextChapter }) => {
       />
 
       <main>
-        <h1>
-          {index !== 0 && <>Chapter {index}: </>}
-          {chapterData !== {} ? chapterData.title : "…"}
-        </h1>
+        <h1
+          dangerouslySetInnerHTML={{ __html: chapterNumText + chapterTitle }}
+        />
         {chapterData.content ? <Markdown>{chapterData.content}</Markdown> : "…"}
         <ChapterNav currentChapter={parseInt(index)} />
       </main>
