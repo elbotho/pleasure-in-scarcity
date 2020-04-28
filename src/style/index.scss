@@ -88,27 +88,27 @@ header .menu-bar {
     margin: 0;
     line-height: $menu-bar-height;
   }
+}
 
-  .button {
-    margin-top: 0.1rem;
-    letter-spacing: 0.04rem;
-    font-family: Arial, sans-serif;
-    text-transform: lowercase;
-    font-size: 0.8rem;
-    font-weight: normal;
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: none;
-    text-decoration: none;
-    padding: 0.3rem 0.4rem;
-    margin: auto 0;
-    cursor: crosshair;
+.button {
+  margin-top: 0.1rem;
+  letter-spacing: 0.04rem;
+  font-family: Arial, sans-serif;
+  text-transform: lowercase;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: none;
+  text-decoration: none;
+  padding: 0.3rem 0.4rem;
+  margin: auto 0;
+  cursor: crosshair;
 
-    &:hover {
-      color: #fff;
-      background-color: #000;
-    }
+  &:hover {
+    color: #fff;
+    background-color: #000;
   }
 }
 
@@ -218,4 +218,11 @@ figure.gallery {
   &.right {
     right: $side-padding;
   }
+}
+
+main footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 4rem;
 }

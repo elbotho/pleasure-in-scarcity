@@ -5,7 +5,7 @@ import Tinyfade from "../helpers/tinyfade";
 import swipeDetect from "../helpers/swipedetect";
 
 //TODO: tinyfade bug with style element when using prev?
-const Gallery = ({ images, esm, nextChapter }) => {
+const Gallery = ({ images, esm, goToNextChapter }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [TinyFade, setTinyFade] = useState(0);
 
@@ -63,7 +63,7 @@ const Gallery = ({ images, esm, nextChapter }) => {
       // console.log(images.length - 1);
 
       if (index === 0 && lastIndex === images.length - 1) {
-        nextChapter();
+        goToNextChapter();
       }
 
       setFilesize(current);
@@ -92,7 +92,9 @@ const Gallery = ({ images, esm, nextChapter }) => {
     const image = elem.querySelector("img");
     fetch(image.src).then((response) => {
       const size = Math.round(response.headers.get("content-length") / 1000);
-      document.getElementById("caption-size").innerHTML = size + " kb";
+      const sizeDisplay = document.getElementById("caption-size");
+      if (!sizeDisplay) return;
+      sizeDisplay.innerHTML = size + " kb";
     });
   }
 

@@ -1,10 +1,11 @@
 import { h } from "preact";
 import { useState, useEffect } from "preact/hooks";
-// import { usePrerenderData } from "@preact/prerender-data-provider";
+import { route } from "preact-router";
 import Markdown from "markdown-to-jsx";
 import Gallery from "../components/gallery";
+import ChapterNav from "../components/chapternav";
 
-const Chapter = ({ index, esm, nextChapter }) => {
+const Chapter = ({ index, esm, goToNextChapter }) => {
   const [chapterData, setChapterData] = useState({});
   useEffect(() => {
     fetch(`/assets/chapters/${index}.json`)
@@ -17,6 +18,7 @@ const Chapter = ({ index, esm, nextChapter }) => {
       .catch(function (err) {
         console.warn("Something went wrong.", err);
         //todo: just route to landing?
+        route("/", true); //replace
       });
   }, []);
 
@@ -25,7 +27,7 @@ const Chapter = ({ index, esm, nextChapter }) => {
       <Gallery
         images={chapterData.galleryImages}
         esm={esm}
-        nextChapter={nextChapter}
+        goToNextChapter={goToNextChapter}
       />
 
       <main>
@@ -33,6 +35,7 @@ const Chapter = ({ index, esm, nextChapter }) => {
           Chapter {index}: {chapterData !== {} ? chapterData.title : "…"}
         </h1>
         {chapterData.content ? <Markdown>{chapterData.content}</Markdown> : "…"}
+        <ChapterNav currentChapter={parseInt(index)} />
       </main>
     </>
   );
