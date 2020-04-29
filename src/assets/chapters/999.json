@@ -1,6 +1,6 @@
 {
   "title": "This is a solar website",
   "chapterNum": 999,
-  "content": "This text is hosted by a local server that is running on solar power…",
+  "content": "this website runs on an off-the-grid solar power system with its own energy storage, and will go off-line during longer periods of cloudy weather. Less than 100% reliability is essential for the sustainability of an off-the-grid solar system, because above a certain threshold the fossil fuel energy used for producing and replacing the batteries is higher than the fossil fuel energy saved by the solar panels. \n\n click [here](/#) to learn more about it at the end of the text.",
   "galleryImages": []
 }

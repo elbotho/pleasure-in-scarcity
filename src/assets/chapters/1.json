@@ -2,24 +2,162 @@
   "galleryImages": [
     {
       "image": {
-        "caption": "Another caption",
-        "src": "/assets/images/pleasure2.jpg"
+        "caption": "this is a caption",
+        "src": "/assets/images/pleasure1.jpg"
       }
     },
     {
       "image": {
-        "src": "/assets/images/pleasure3.jpg",
-        "caption": "Caption"
+        "src": "/assets/images/pleasure5.jpg",
+        "caption": "This is a caption"
+      }
+    },
+
+
+
+    {
+      "image": {
+        "src": "/assets/images/c0.jpg",
+        "caption": "Tell a new story with images"
       }
     },
     {
       "image": {
-        "src": "/assets/images/pleasure4.jpg",
-        "caption": "Caption"
+        "src": "/assets/images/c1.jpg",
+        "caption": "Tell a new story with images"
       }
-    }
+    },
+    {
+      "image": {
+        "src": "/assets/images/c2.jpg",
+        "caption": "Tell a new story with images"
+      }
+    },{
+      "image": {
+        "caption": "Tell a new story with images",
+        "src": "/assets/images/c3.jpg"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/c4.jpg",
+        "caption": "Tell a new story with images"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/c5.jpg",
+        "caption": "Tell a new story with images"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/c6.jpg",
+        "caption": "PORTRAIT"
+      }
+    },
+
+
+
+    {
+      "image": {
+        "src": "/assets/images/geodesic1.jpg",
+        "caption": "fear picture, how I find it online"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/geodesic2.jpg",
+        "caption": "fear picture, roughen it, grain it."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/geodesic2-1.jpg",
+        "caption": "fear picture, roughen it, grain it."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/geodesic2-2.jpg",
+        "caption": "fear picture, roughen it, grain it."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/geodesic3.jpg",
+        "caption": "video"
+      }
+    },
+
+
+
+  {
+      "image": {
+        "src": "/assets/images/d1.jpg",
+        "caption": "video"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/d2.jpg",
+        "caption": "video"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/d3.jpg",
+        "caption": "video"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/d4.jpg",
+        "caption": "video"
+      }
+    },
+
+    
+
+
+    {
+      "image": {
+        "src": "/assets/images/f1.jpg",
+        "caption": "video"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/f2.jpg",
+        "caption": "video"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/f3.jpg",
+        "caption": "video"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/f4.jpg",
+        "caption": "video"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/f5.jpg",
+        "caption": "video"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/f6.jpg",
+        "caption": "video"
+      }
+    }    
   ],
-  "content": "<div style=\"text-align: right\">*Soft smoke rises from the chimney. Then it disappears as the oven reaches its temperature, the air flow becomes audible, a roaring sounds from within the metal that gives the rocket stove its name. While the thermometer is rising in small increments, just barely climbing up the 200° mark, I get the dough ready.*</div>\n\nRarely has there been a moment in recent Western memory when we have become aware of the scarcity of things. While I‘m writing this text under the shadow of the Corona crisis, supermarket shelves are empty and access to basic commodities is restricted. Already now we know that after this, the world will not be the same.\n\n<div style=\"text-align: right\">*The dough was rising over night outside in the fresh April air. Seemingly worthless resources like water, flour and salt become alive, fermenting into a sculpture full of sensational potential, softly resisting the touch of my fingers.*</div>",
+  "content": "<div class=\"pleasure-text\">*Soft smoke rises from the chimney. Then it disappears as the oven reaches its temperature, the air flow becomes audible, a roaring sounds from within the metal that gives the rocket stove its name. While the thermometer is rising in small increments, just barely climbing up the 200° mark, I get the dough ready.*</div><div class=\"text\">Rarely has there been a moment in recent Western memory when we have become aware of the scarcity of things. While I‘m writing this text under the shadow of the Corona crisis, supermarket shelves are empty and access to basic commodities is restricted. Already now we know that after this, the world will not be the same.</div><div class=\"pleasure-text\">*The dough was rising over night outside in the fresh April air. Seemingly worthless resources like water, flour and salt become alive, fermenting into a sculpture full of sensational potential, softly resisting the touch of my fingers.*</div><div class=\"text\">Our lives are driven by the idea of abundance, things have become overly accessible and thereby meaningless. Illusions of a limitless planet, constant growth and ongoing technological progress suggest that abundance equals pleasure. They produce our unsustainable lifestyles that are wasteful, exploitative and destructive for the environment and the planet. That has to change. Considering the reality of a planet with limited resources, the future must be a future of scarcity, based on acknowledging the limitations of the planet, a reality revealing itself through empty shelves. The notion of scarcity carries connotations of lack and inconvenience. But we cannot walk into a future that we deem negative and painful. Sigmund Freud’s “pleasure principle” tells us that our actions are informed by the quest for pleasure and the avoidance of pain. Pleasure is an incentive for self-initiated action, whereas pain leads to reactionary coping behaviour. (WIKIPEDIA, pleasure principle) Therefore, pleasure is a better reason for action than pain, as it leads to procreative action, capable to create and imagine novel ways of life that are sustainable beyond pain. This means, that in order to embrace the changes to come, we need to create the pleasure that scarcity is capable to produce. This lies at the core of this work.</div>",
   "chapterNum": 1,
   "title": "The future is <b>scarcity</b>"
 }

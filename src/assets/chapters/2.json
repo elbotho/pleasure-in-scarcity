@@ -1,12 +1,25 @@
 {
-  "title": "Chapterplaceholder 2",
-  "chapterNum": 2,
-  "content": "This is just a placeholder",
   "galleryImages": [
     {
       "image": {
-        "src": "/assets/images/dokumentation_designonwheels_02.jpg"
+        "caption": "Another caption",
+        "src": "/assets/images/pleasure2.jpg"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/pleasure3.jpg",
+        "caption": "Caption"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/pleasure4.jpg",
+        "caption": "Caption"
       }
     }
-  ]
+  ],
+  "content": "<div style=\"text-align: right\">test2</div>",
+  "chapterNum": 1,
+  "title": "The future is <b>scarcity</b>"
 }

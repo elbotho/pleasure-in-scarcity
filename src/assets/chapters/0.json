@@ -1,11 +1,11 @@
 {
   "title": "Finding Pleasure in Scarcity",
-  "content": "This text is hosted by a local server that is running on solar power. Read more about what that means [here](/solar).\n\na thesis by **Daniel Parnitzke**\\\nApril 2020,\\\nMA Social Design,\\\nDesign Academy Eindhoven",
+  "content": "This text is hosted by a local server that is running on solar power. Read more about what that means [here](/solar).\n\na thesis by **Daniel Parnitzke**<br/>April 2020, <br/>MA Social Design,<br/>Design Academy Eindhoven",
   "galleryImages": [
     {
       "image": {
-        "src": "/assets/images/pleasure1.jpg",
-        "caption": "Let's go."
+        "src": "/assets/images/front.jpg",
+        "caption": "solar server setup with 30W solar panels and 260Wh battery."
       }
     }
   ],
