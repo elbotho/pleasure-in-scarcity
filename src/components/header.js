@@ -70,7 +70,9 @@ const Header = ({
         {showExplanation && <Explanation close={closeNotice} />}
       </div>
       <div class="menu-bar">
-        <h1>Pleasure in Scarcity</h1>
+        <h1>
+          <a href="/">Pleasure in Scarcity</a>
+        </h1>
         {esmButton}
       </div>
     </header>

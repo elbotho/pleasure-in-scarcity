@@ -13,7 +13,7 @@ const ChapterNav = ({ currentChapter }) => {
           {currentChapter === 1 ? "Start" : "Previous Chapter"}
         </a>
       )}
-      <a class="button" href="">
+      <a class="button" href="/toc">
         Table of Contents
       </a>
       <a class="button" href={"/chapter/" + (currentChapter + 1)}>

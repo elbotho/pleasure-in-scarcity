@@ -15,8 +15,8 @@ TODO: lazyload images
 // Code-splitting is automated for routes
 
 import Home from "../routes/home";
-// import Chapter from "../routes/chapter";
 import Chapter from "../routes/chapter";
+import TOC from "../routes/toc";
 
 export default function App(props) {
   const [energySaveMode, setEnergySaveMode] = useState(false);
@@ -70,10 +70,15 @@ export default function App(props) {
       route("/");
     }
   }
+
+  // console.log(window.location.pathname);
+  // console.log("WWWW");
   return (
     <div id="app">
       <Header
-        initialShowNotice={currentChapter === 0}
+        initialShowNotice={
+          currentChapter === 0 && window.location.pathname === ""
+        }
         mVBattery={serverLog.mVBattery}
         mALoad={serverLog.mALoad}
         mVPV={serverLog.mVPV}
@@ -98,6 +103,7 @@ export default function App(props) {
           esm={energySaveMode}
           goToNextChapter={goToNextChapter}
         />
+        <TOC path="/toc" lastPath={window.location.pathname} />
       </Router>
     </div>
   );

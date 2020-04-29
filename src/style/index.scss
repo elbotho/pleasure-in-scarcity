@@ -93,6 +93,11 @@ header .menu-bar {
     margin: 0;
     line-height: $menu-bar-height;
   }
+
+  a {
+    color: $body-color;
+    text-decoration: none;
+  }
 }
 
 .button {

@@ -7,6 +7,8 @@ import ChapterNav from "../components/chapternav";
 
 const Chapter = ({ index, esm, goToNextChapter }) => {
   const [chapterData, setChapterData] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     fetch(`/assets/chapters/${index}.json`)
       .then(function (response) {
@@ -14,6 +16,7 @@ const Chapter = ({ index, esm, goToNextChapter }) => {
       })
       .then(function (data) {
         setChapterData(data);
+        setIsLoading(false);
       })
       .catch(function (err) {
         console.warn("Something went wrong.", err);
@@ -33,7 +36,9 @@ const Chapter = ({ index, esm, goToNextChapter }) => {
 
       <main>
         <h1
-          dangerouslySetInnerHTML={{ __html: chapterNumText + chapterTitle }}
+          dangerouslySetInnerHTML={{
+            __html: chapterNumText + chapterTitle,
+          }}
         />
         {chapterData.content ? <Markdown>{chapterData.content}</Markdown> : "…"}
         <ChapterNav currentChapter={parseInt(index)} />
