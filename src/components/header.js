@@ -103,7 +103,7 @@ const Explanation = ({ close }) => {
       {chapterData.content ? <Markdown>{chapterData.content}</Markdown> : "…"}
       <p>
         <a class="button" onClick={close}>
-          Close Notice
+          Proceed to the thesis
         </a>
       </p>
     </div>
