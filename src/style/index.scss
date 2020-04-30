@@ -34,6 +34,11 @@ body.esm {
   background-color: $body-color;
   color: #fff;
 
+  ::selection {
+    background-color: #fff;
+    color: #000;
+  }
+
   & .button {
     color: #fff;
     border: solid 1px #fff;
@@ -45,18 +50,6 @@ body.esm {
       background-color: #fff;
     }
   }
-
-  & img{
-    mix-blend-mode: multiply !important;
-    position: absolute;
-  }
-  & .coloroverlay{
-    height: 80vh;
-    background-color: red;
-    background-position: center;
-    background-size: cover;
-  }
-
 
   & a{
     color: red;
@@ -77,11 +70,18 @@ body.esm {
   }
 
   & #esm-button{
-   background-color: #fff;
+   background-color: red;
+   border-color: red;
   }
-  /*& header{
-    border-color: #fff;
-    background-color: #000;
+
+  & .menu-bar{
+    border-bottom: 1px solid #fff;
+    background-color: #000 !important;
+
+    & #site-id{
+      color: #fff;
+    }
+
   }
 
   & .stats{
@@ -89,21 +89,21 @@ body.esm {
     color: #000;
 
     & a{
-      color: initial;
+      color: red;
     }
-  }*/
+  }
 }
 
 .pleasure-text {
   font-style: italic;
   text-align: right;
-  padding-left: 15%;
+  padding-left: 10%;
 }
 
 .text {
   font-style: normal;
   text-align: left;
-  padding-right: 15%;
+  padding-right: 10%;
 }
 
 main {
@@ -128,17 +128,24 @@ h1 {
 #toc{
 list-style-type:none;
 font-size: 1.2rem;
-line-height: 145%;
+  
+  & li{
+    padding-bottom: .8rem;
+  }
+
+  & li a{
+    color: #000;
+  }
 
   & li:nth-child(1){
      padding-left: 0rem;
   }
 
-  & li:nth-child(2){
+  & li:nth-child(2),li:nth-child(5){
      padding-left: 1rem;
   }
 
-  & li:nth-child(3){
+  & li:nth-child(3),li:nth-child(6),li:nth-child(7),li:nth-child(8),li:nth-child(9){
      padding-left: 2rem;
   }
 
@@ -182,16 +189,16 @@ header .menu-bar {
   }
 
   .button{
-    color: red;
-    background-color: #fff;
-    border-color: red;
+    color: #fff;
+    background-color: red;
+    border-color: #fff;
     float: right; 
     text-align: right;
     margin-right: 0;
 
     &:hover{
-      color: #fff;
-      background-color: red !important;
+      color: red;
+      background-color: #fff !important;
       border-color: red;
     }
   }
@@ -213,7 +220,6 @@ header .menu-bar {
   margin: auto 0;
   cursor: crosshair;
   user-select: none;
-
 
   &:hover {
     color: #fff;
@@ -259,45 +265,49 @@ header .stats {
 .explanation {
   position: absolute;
   height: auto;
-  width: 50vw;
+  width: 45vw;
   text-align: left;
   margin: auto;
-  top: $menu-bar-height;
+  top: 20vh;
   left: 0;
   right: 0;
   background: #000;
   border: solid 1px #fff;
   color: #fff;
-  padding: 2rem;
+  padding: 2rem 2.5rem 3rem 3rem;
   font-family: "Times New Roman", serif;
   font-weight: normal;
   letter-spacing: 0.02rem;
 
   & h1{
   font-family: "Times New Roman", serif;
-  font-size: 22px;
+  font-size: 23px;
   margin: 0;
   padding-bottom: 0;
   }
 
   & span, p{
-  font-size: 22px;
-  width: 85%;
+  font-size: 23px;
+  width: 100%;
   padding-bottom: .5rem;
   line-height: 145%;
   }
 
-  & a{
-    color: green;
+  & a.button{
+    color: #fff !important;
+
+    &:hover{
+      color: #000 !important;
+    }
   }
 
   & .button{
     position: absolute;
-    bottom: 1.4rem;
+    bottom: 2rem;
     background-color: #000;
     color: #fff;
     border: solid 1px #fff;
-    font-size: 22px;
+    font-size: 23px;
 
     &:hover {
       color: #000;
@@ -363,7 +373,7 @@ figure.gallery {
 
 .gallery-arrow {
   color: #fff;
-  font-size: 5rem;
+  font-size: 3rem;
   text-shadow: 0px 0px 1px #000;
   position: absolute;
   top: 50%;
@@ -379,6 +389,8 @@ figure.gallery {
 
   &.left {
     left: $side-padding;
+    margin-top: 0.3rem;
+    transform: rotate(180deg) !important;
   }
 
   &.right {

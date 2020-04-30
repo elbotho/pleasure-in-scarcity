@@ -71,7 +71,7 @@ const Header = ({
       </div>
       <div class="menu-bar">
         <h1>
-          <a href="/">Pleasure in Scarcity</a>
+          <a id="site-id" href="/">Pleasure in Scarcity</a>
         </h1>
         {esmButton}
       </div>
