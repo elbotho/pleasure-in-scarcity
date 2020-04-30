@@ -19,7 +19,7 @@ import Chapter from "../routes/chapter";
 import TOC from "../routes/toc";
 
 export default function App(props) {
-  const [energySaveMode, setEnergySaveMode] = useState(false);
+  const [energySaveMode, setEnergySaveMode] = useState(true);
   const [currentChapter, setCurrentChapter] = useState(0);
 
   const [serverLog, setServerLog] = useState({
