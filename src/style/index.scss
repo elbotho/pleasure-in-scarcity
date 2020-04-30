@@ -286,16 +286,19 @@ header .stats {
   width: 44vw;
   text-align: left;
   margin: auto;
-  top: 20vh;
-  left: 0;
+  top: 22vh;
   right: 0;
+  left: 0;
   background: #000;
   border: solid 1px #fff;
   color: #fff;
-  padding: 2rem 2.5rem 3rem 3rem;
+  padding: 2rem 2.5rem 3.5rem 3rem;
   font-family: "Times New Roman", serif;
   font-weight: normal;
   letter-spacing: 0.02rem;
+  z-index: 999;
+  /*top: $stats-bar-height;*/
+
 
   & h1{
   font-family: "Times New Roman", serif;
@@ -346,6 +349,7 @@ figure.gallery {
   padding-top: $header-height;
   box-sizing: border-box;
   border-right: 1px solid #000;
+  z-index: 1;
 
   .tinyfade > * {
     pointer-events: none;
