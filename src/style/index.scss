@@ -92,6 +92,14 @@ body.esm {
       color: red;
     }
   }
+
+  & #toc a{
+    color: #fff;
+  }
+}
+
+#esm-button{
+  font-family: Arial, sans-serif;
 }
 
 .pleasure-text {
@@ -154,6 +162,16 @@ font-size: 1.2rem;
   }
 }
 
+/*.toc-button{
+  background-color: #000 !important;
+  color: #fff !important;
+
+  &:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+}*/
+
 header {
   position: absolute;
   top: 0;
@@ -207,7 +225,7 @@ header .menu-bar {
 .button {
   margin-top: 0.1rem;
   letter-spacing: 0.04rem;
-  font-family: Arial, sans-serif;
+  font-family: "Times New Roman", serif;
   text-transform: lowercase;
   font-size: 0.8rem;
   font-weight: normal;
@@ -265,7 +283,7 @@ header .stats {
 .explanation {
   position: absolute;
   height: auto;
-  width: 45vw;
+  width: 44vw;
   text-align: left;
   margin: auto;
   top: 20vh;
@@ -281,13 +299,13 @@ header .stats {
 
   & h1{
   font-family: "Times New Roman", serif;
-  font-size: 23px;
+  font-size: 1.3rem;
   margin: 0;
   padding-bottom: 0;
   }
 
   & span, p{
-  font-size: 23px;
+  font-size: 1.3rem;
   width: 100%;
   padding-bottom: .5rem;
   line-height: 145%;
@@ -307,7 +325,7 @@ header .stats {
     background-color: #000;
     color: #fff;
     border: solid 1px #fff;
-    font-size: 23px;
+    font-size: 1rem;
 
     &:hover {
       color: #000;
@@ -368,6 +386,11 @@ figure.gallery {
     font-size: 0.8rem;
     line-height: 145%;
     border-top: 1px solid #000;
+  
+  & #caption-text{
+    width: 95%;
+  }
+
   }
 }
 
