@@ -77,7 +77,7 @@ export default function App(props) {
     <div id="app">
       <Header
         initialShowNotice={
-          currentChapter === 0 && window.location.pathname === ""
+          currentChapter === 0 && window.location.pathname === "/"
         }
         mVBattery={serverLog.mVBattery}
         mALoad={serverLog.mALoad}
