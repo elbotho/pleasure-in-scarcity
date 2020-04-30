@@ -84,7 +84,7 @@ export default function App(props) {
         mVPV={serverLog.mVPV}
         powerPV={serverLog.powerPV}
         esmButton={
-          <a class="button" onClick={onEsmButtonClick}>
+          <a id="esm-button" class="button" onClick={onEsmButtonClick}>
             {energySaveMode
               ? "Turn energy saving off"
               : "Activate energy saving"}
