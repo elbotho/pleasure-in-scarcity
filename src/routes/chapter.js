@@ -24,8 +24,7 @@ const Chapter = ({ index, esm, goToNextChapter }) => {
       });
   }, [index]);
 
-  {/*const chapterNumText = index === 0 ? "" : `Chapter ${index}: `;*/}
-  const chapterNumText = index === 0 ? "" :  "";
+  const chapterNumText = index === 0 ? "" : `Chapter ${index}: `;
   const chapterTitle = chapterData !== {} ? chapterData.title : "…";
   return (
     <>

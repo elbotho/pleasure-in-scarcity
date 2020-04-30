@@ -1,6 +1,6 @@
 {
   "title": "This is a solar website",
   "chapterNum": 999,
-  "content": "This website is hosted on a local server that is running on solar power. During longer periods of insufficient light this website will go offline! The website has an energy saving mode that allows to run it with reduced energy consumption. In times of insufficient power production, the website is served in this mode. Control the amount of energy you use by reading this website through the button on the top right. \n\n click [here](/#) to find a text on what it means to run a solar website in the appendix of this thesis.",
+  "content": "this website runs on an off-the-grid solar power system with its own energy storage, and will go off-line during longer periods of cloudy weather. Less than 100% reliability is essential for the sustainability of an off-the-grid solar system, because above a certain threshold the fossil fuel energy used for producing and replacing the batteries is higher than the fossil fuel energy saved by the solar panels. \n\n click [here](/#) to learn more about it at the end of the text.",
   "galleryImages": []
 }

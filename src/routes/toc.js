@@ -1,6 +1,6 @@
 import { useState, useEffect } from "preact/hooks";
 
-const maxChapters = 9;
+const maxChapters = 4;
 
 export default ({ lastPath }) => {
   const [chapters, setChapters] = useState([]);
@@ -50,8 +50,7 @@ export default ({ lastPath }) => {
         <h1>Table of Contents</h1>
         <ol id="toc">
           {chapters.map((title, index) => {
-            {/*const chapterNumText = index === 0 ? "" : `Chapter ${index}: `;*/}
-            const chapterNumText = index === 0 ? "" : "";
+            const chapterNumText = index === 0 ? "" : `Chapter ${index}: `;
             const chapterTitle = title;
             if (index === chapters.length - 1) return null;
             return (
