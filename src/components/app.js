@@ -8,13 +8,10 @@ TODO: lazyload images
         https://github.com/tuupola/lazyload or https://github.com/aFarkas/lazysizes or custom
       code split chapters?
       maybe even use code spliting for image routes?
-
       maybe rebuild slider functions in react?
 */
 
 // Code-splitting is automated for routes
-
-import Home from "../routes/home";
 import Chapter from "../routes/chapter";
 import TOC from "../routes/toc";
 
@@ -65,11 +62,7 @@ export default function App(props) {
     if (pathParts[1] !== "chapter") route("/chapter/1");
     if (pathParts[1] === "chapter") {
       const nextChapter = parseInt(pathParts[2]) + 1;
-      if (nextChapter < 100) {
-        //TODO: get real chapter length somehow
-        route("/chapter/" + nextChapter);
-      }
-      route("/");
+      route("/chapter/" + nextChapter);
     }
   }
 

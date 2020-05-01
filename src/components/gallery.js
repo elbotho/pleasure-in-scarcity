@@ -58,17 +58,20 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
 
       setCurrentIndex(index);
 
-      // console.log(index);
-      // console.log(last.dataset.index);
-      // console.log(images.length - 1);
+      console.log(`${index} should be 0`);
+      console.log(`${lastIndex} should be ${images.length - 1}`);
 
-      if (index === 0 && lastIndex === images.length - 1) {
+      if (
+        index === 0 &&
+        (lastIndex === images.length - 1 ||
+          (images.length - 1 === 1 && lastIndex === 0))
+      ) {
         goToNextChapter();
       }
 
       setFilesize(current);
     });
-  }, []);
+  }, [images]);
 
   useEffect(() => {
     setFilesize(
@@ -134,7 +137,9 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
         ➞
       </a>
       <figcaption>
-        <p id="caption-text">{images[currentIndex].image.caption}</p>
+        <p id="caption-text">
+          {images[currentIndex] ? images[currentIndex].image.caption : ""}
+        </p>
         <p>
           <span id="caption-index">
             {currentIndex + 1} / {images.length}
