@@ -1,8 +1,8 @@
-$body_color: #000;
-$stats_bar_height: 1.8rem;
-$menu_bar_height: 3.6rem;
-$side_padding: 0.8rem;
-$header_height: $stats_bar_height + $menu_bar_height;
+$body-color: #000;
+$stats-bar-height: 1.8rem;
+$menu-bar-height: 3.6rem;
+$side-padding: 0.8rem;
+$header-height: $stats-bar-height + $menu-bar-height;
 
 @import "tinyfade";
 
@@ -22,16 +22,16 @@ html {
 }
 
 body {
-  color: $body_color;
+  color: $body-color;
   font-family: "Times New Roman", serif;
-  padding: calc(80vh + 2rem) $side_padding 5rem $side_padding;
+  padding: calc(80vh + 2rem) $side-padding 5rem $side-padding;
   @media (min-width: 800px) {
     padding: 6rem 1rem 5rem calc(100vw - 29rem);
   }
 }
 
 body.esm {
-  background-color: $body_color;
+  background-color: $body-color;
   color: #fff;
 
   ::selection {
@@ -43,61 +43,62 @@ body.esm {
     color: #fff;
     border: solid 1px #fff;
     background-color: #000;
-
-    &:hover {
+  
+      &:hover {
       color: #000;
       border: solid 1px #000;
       background-color: #fff;
     }
   }
 
-  & a {
+  & a{
     color: red;
   }
 
-  & .gallery-arrow {
+   & .gallery-arrow{
     color: red !important;
-  }
+ }
 
-  & figcaption {
+  & figcaption{
     background: #000 !important;
     border-color: #fff !important;
     color: #fff !important;
   }
 
-  & figure.gallery {
+  & figure.gallery{
     border-color: #fff;
   }
 
-  & #esm-button {
-    background-color: red;
-    border-color: red;
+  & #esm-button{
+   background-color: red;
+   border-color: red;
   }
 
-  & .menu-bar {
+  & .menu-bar{
     border-bottom: 1px solid #fff;
     background-color: #000 !important;
 
-    & #site-id {
+    & #site-id{
       color: #fff;
     }
+
   }
 
-  & .stats {
+  & .stats{
     background-color: #fff;
     color: #000;
 
-    & a {
+    & a{
       color: red;
     }
   }
 
-  & #toc a {
+  & #toc a{
     color: #fff;
   }
 }
 
-#esm-button {
+#esm-button{
   font-family: Arial, sans-serif;
 }
 
@@ -132,37 +133,32 @@ h1 {
   line-height: 120%;
 }
 
-#toc {
-  list-style-type: none;
-  font-size: 1.2rem;
-
-  & li {
-    padding-bottom: 0.8rem;
+#toc{
+list-style-type:none;
+font-size: 1.2rem;
+  
+  & li{
+    padding-bottom: .8rem;
   }
 
-  & li a {
+  & li a{
     color: #000;
   }
 
-  & li:nth-child(1) {
-    padding-left: 0rem;
+  & li:nth-child(1){
+     padding-left: 0rem;
   }
 
-  & li:nth-child(2),
-  li:nth-child(5) {
-    padding-left: 1rem;
+  & li:nth-child(2),li:nth-child(5){
+     padding-left: 1rem;
   }
 
-  & li:nth-child(3),
-  li:nth-child(6),
-  li:nth-child(7),
-  li:nth-child(8),
-  li:nth-child(9) {
-    padding-left: 2rem;
+  & li:nth-child(3),li:nth-child(6),li:nth-child(7),li:nth-child(8),li:nth-child(9){
+     padding-left: 2rem;
   }
 
-  & li:nth-child(4) {
-    padding-left: 3rem;
+  & li:nth-child(4){
+     padding-left: 3rem;
   }
 }
 
@@ -190,35 +186,35 @@ header {
 }
 
 header .menu-bar {
-  height: $menu_bar_height;
-  padding: 0 $side_padding;
+  height: $menu-bar-height;
+  padding: 0 $side-padding;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
 
   @media (min-width: 800px) {
-    width: calc(100vw - #{2 * $side_padding});
+    width: calc(100vw-2*$side-padding);
   }
 
   h1 {
     margin: 0;
-    line-height: $menu_bar_height;
+    line-height: $menu-bar-height;
   }
 
   a {
-    color: $body_color;
+    color: $body-color;
     text-decoration: none;
   }
 
-  .button {
+  .button{
     color: #fff;
     background-color: red;
     border-color: #fff;
-    float: right;
+    float: right; 
     text-align: right;
     margin-right: 0;
 
-    &:hover {
+    &:hover{
       color: red;
       background-color: #fff !important;
       border-color: red;
@@ -250,13 +246,13 @@ header .menu-bar {
 }
 
 header .stats {
-  height: $stats_bar_height;
+  height: $stats-bar-height;
   background-color: #000;
   color: #fff;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
-  padding: 0 $side_padding;
-  line-height: $stats_bar_height;
+  padding: 0 $side-padding;
+  line-height: $stats-bar-height;
   text-align: right;
   font-size: 0.8rem;
   display: flex;
@@ -279,7 +275,7 @@ header .stats {
     margin-left: 0.4rem;
   }
 
-  a {
+  a{
     color: red;
   }
 }
@@ -301,23 +297,6 @@ header .stats {
   font-weight: normal;
   letter-spacing: 0.02rem;
   z-index: 999;
-<<<<<<< Updated upstream
-  /*top: $stats_bar_height;*/
-
-  & h1 {
-    font-family: "Times New Roman", serif;
-    font-size: 1.3rem;
-    margin: 0;
-    padding-bottom: 0;
-  }
-
-  & span,
-  p {
-    font-size: 1.3rem;
-    width: 100%;
-    padding-bottom: 0.5rem;
-    line-height: 145%;
-=======
   top: $menu-bar-height;
 
   ::selection {
@@ -337,18 +316,17 @@ header .stats {
   width: 100%;
   padding-bottom: .5rem;
   line-height: 145%;
->>>>>>> Stashed changes
   }
 
-  & a.button {
+  & a.button{
     color: #fff !important;
 
-    &:hover {
+    &:hover{
       color: #000 !important;
     }
   }
 
-  & .button {
+  & .button{
     position: absolute;
     bottom: 2rem;
     background-color: #000;
@@ -363,16 +341,6 @@ header .stats {
   }
 }
 
-.explanation-content {
-  .show-on-low-power {
-    display: none;
-  }
-
-  &.low-power .show-on-low-power {
-    display: block;
-  }
-}
-
 figure.gallery {
   margin: 0;
   padding: 0;
@@ -382,7 +350,7 @@ figure.gallery {
   top: 0;
   left: 0;
   right: 0;
-  padding-top: $header_height;
+  padding-top: $header-height;
   box-sizing: border-box;
   border-right: 1px solid #000;
   z-index: 1;
@@ -391,15 +359,17 @@ figure.gallery {
     pointer-events: none;
 
     img {
-      height: calc(80vh - #{$header_height});
+      height: calc(80vh - #{$header-height});
       object-fit: cover;
       width: 100%;
 
       @media (min-width: 800px) {
-        height: calc(100vh - #{$header_height});
+        height: calc(100vh - #{$header-height});
       }
     }
   }
+
+
 
   @media (min-width: 800px) {
     position: fixed;
@@ -419,15 +389,16 @@ figure.gallery {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 $side_padding;
+    padding: 0 $side-padding;
     box-sizing: border-box;
     font-size: 0.8rem;
     line-height: 145%;
     border-top: 1px solid #000;
+  
+  & #caption-text{
+    width: 95%;
+  }
 
-    & #caption-text {
-      width: 95%;
-    }
   }
 }
 
@@ -448,13 +419,13 @@ figure.gallery {
   user-select: none;
 
   &.left {
-    left: $side_padding;
+    left: $side-padding;
     margin-top: 0.3rem;
     transform: rotate(180deg) !important;
   }
 
   &.right {
-    right: $side_padding;
+    right: $side-padding;
   }
 }
 
