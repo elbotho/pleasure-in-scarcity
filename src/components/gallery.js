@@ -8,10 +8,14 @@ import swipeDetect from "../helpers/swipedetect";
 const Gallery = ({ images, esm, goToNextChapter }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [TinyFade, setTinyFade] = useState(0);
+  const [hide, setHide] = useState(false);
 
   if (!images) return "…";
 
   useEffect(() => {
+    setHide(false);
+    if (hide) return;
+
     let tf = new Tinyfade(
       "#tinyfade", // Element
       -1, // interval in ms (-1 for manual mode, default = 5000)
@@ -67,13 +71,12 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
           (images.length - 1 === 1 && lastIndex === 0))
       ) {
         goToNextChapter();
-        const current = document.querySelector("tinyfade > .tinyfade-current");
-        if (current) current.style.opacity = 0;
+        setHide(true);
       }
 
       setFilesize(current);
     });
-  }, [images]);
+  }, [images, hide]);
 
   useEffect(() => {
     setFilesize(
@@ -102,6 +105,15 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
       sizeDisplay.innerHTML = size + " kb";
     });
   }
+
+  if (hide)
+    return (
+      <figure class="gallery">
+        <div id="tinyfade" class="tinyfade">
+          …
+        </div>
+      </figure>
+    );
 
   return (
     <figure class="gallery">
