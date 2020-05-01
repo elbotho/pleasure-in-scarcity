@@ -45,6 +45,8 @@ export default function App(props) {
   function handleRoute(e) {
     if (e.current.props.index !== undefined)
       setCurrentChapter(parseInt(e.current.props.index));
+
+    scrollTo(0, 0);
   }
 
   function onEsmButtonClick(e) {
