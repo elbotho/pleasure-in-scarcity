@@ -85,11 +85,11 @@ body.esm {
   }
 
   & .stats{
-    background-color: #fff;
+    background-color: red;
     color: #000;
 
     & a{
-      color: red;
+      color: #fff;
     }
   }
 
@@ -247,8 +247,8 @@ header .menu-bar {
 
 header .stats {
   height: $stats-bar-height;
-  background-color: #000;
-  color: #fff;
+  background-color: red;
+  color: #000;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
   padding: 0 $side-padding;
@@ -276,7 +276,7 @@ header .stats {
   }
 
   a{
-    color: red;
+    color: #fff;
   }
 }
 
