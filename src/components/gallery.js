@@ -58,8 +58,8 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
 
       setCurrentIndex(index);
 
-      console.log(`${index} should be 0`);
-      console.log(`${lastIndex} should be ${images.length - 1}`);
+      // console.log(`${index} should be 0`);
+      // console.log(`${lastIndex} should be ${images.length - 1}`);
 
       if (
         index === 0 &&
