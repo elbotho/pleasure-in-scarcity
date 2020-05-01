@@ -123,7 +123,7 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
           id="gallery-left"
           onClick={onLeftArrowClick}
         >
-          ⇽
+          ➞
         </a>
       )}
       <a
@@ -131,7 +131,7 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
         id="gallery-right"
         onClick={onRightArrowClick}
       >
-        ⇾
+        ➞
       </a>
       <figcaption>
         <p id="caption-text">{images[currentIndex].image.caption}</p>

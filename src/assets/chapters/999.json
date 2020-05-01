@@ -1,6 +1,6 @@
 {
   "title": "This is a solar website",
   "chapterNum": 999,
-  "content": "This text is hosted by a local server that is running on solar power…",
+  "content": "This website is hosted on a local server that is running on solar power. During longer periods of insufficient light this website will go offline! The website has an energy saving mode that allows to run it with reduced energy consumption. In times of insufficient power production, the website is served in this mode. Control the amount of energy you use by reading this website through the button on the top right. \n\n click [here](/#) to find a text on what it means to run a solar website in the appendix of this thesis.",
   "galleryImages": []
 }

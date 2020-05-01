@@ -19,7 +19,7 @@ import Chapter from "../routes/chapter";
 import TOC from "../routes/toc";
 
 export default function App(props) {
-  const [energySaveMode, setEnergySaveMode] = useState(false);
+  const [energySaveMode, setEnergySaveMode] = useState(true);
   const [currentChapter, setCurrentChapter] = useState(0);
 
   const [serverLog, setServerLog] = useState({
@@ -77,14 +77,14 @@ export default function App(props) {
     <div id="app">
       <Header
         initialShowNotice={
-          currentChapter === 0 && window.location.pathname === ""
+          currentChapter === 0 && window.location.pathname === "/"
         }
         mVBattery={serverLog.mVBattery}
         mALoad={serverLog.mALoad}
         mVPV={serverLog.mVPV}
         powerPV={serverLog.powerPV}
         esmButton={
-          <a class="button" onClick={onEsmButtonClick}>
+          <a id="esm-button" class="button" onClick={onEsmButtonClick}>
             {energySaveMode
               ? "Turn energy saving off"
               : "Activate energy saving"}

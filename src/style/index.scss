@@ -1,4 +1,4 @@
-$body-color: #333;
+$body-color: #000;
 $stats-bar-height: 1.8rem;
 $menu-bar-height: 3.6rem;
 $side-padding: 0.8rem;
@@ -33,18 +33,85 @@ body {
 body.esm {
   background-color: $body-color;
   color: #fff;
+
+  ::selection {
+    background-color: #fff;
+    color: #000;
+  }
+
+  & .button {
+    color: #fff;
+    border: solid 1px #fff;
+    background-color: #000;
+  
+      &:hover {
+      color: #000;
+      border: solid 1px #000;
+      background-color: #fff;
+    }
+  }
+
+  & a{
+    color: red;
+  }
+
+   & .gallery-arrow{
+    color: red !important;
+ }
+
+  & figcaption{
+    background: #000 !important;
+    border-color: #fff !important;
+    color: #fff !important;
+  }
+
+  & figure.gallery{
+    border-color: #fff;
+  }
+
+  & #esm-button{
+   background-color: red;
+   border-color: red;
+  }
+
+  & .menu-bar{
+    border-bottom: 1px solid #fff;
+    background-color: #000 !important;
+
+    & #site-id{
+      color: #fff;
+    }
+
+  }
+
+  & .stats{
+    background-color: #fff;
+    color: #000;
+
+    & a{
+      color: red;
+    }
+  }
+
+  & #toc a{
+    color: #fff;
+  }
+}
+
+#esm-button{
+  font-family: Arial, sans-serif;
 }
 
 .pleasure-text {
   font-style: italic;
   text-align: right;
-  padding-left: 15%;
+  padding-left: 10%;
 }
 
 .text {
   font-style: normal;
   text-align: left;
-  padding-right: 15%;
+  padding-right: 10%;
 }
 
 main {
@@ -61,10 +128,49 @@ a {
 }
 
 h1 {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: normal;
   line-height: 120%;
 }
+
+#toc{
+list-style-type:none;
+font-size: 1.2rem;
+  
+  & li{
+    padding-bottom: .8rem;
+  }
+
+  & li a{
+    color: #000;
+  }
+
+  & li:nth-child(1){
+     padding-left: 0rem;
+  }
+
+  & li:nth-child(2),li:nth-child(5){
+     padding-left: 1rem;
+  }
+
+  & li:nth-child(3),li:nth-child(6),li:nth-child(7),li:nth-child(8),li:nth-child(9){
+     padding-left: 2rem;
+  }
+
+  & li:nth-child(4){
+     padding-left: 3rem;
+  }
+}
+
+/*.toc-button{
+  background-color: #000 !important;
+  color: #fff !important;
+
+  &:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+}*/
 
 header {
   position: absolute;
@@ -84,9 +190,10 @@ header .menu-bar {
   padding: 0 $side-padding;
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
 
   @media (min-width: 800px) {
-    width: calc(100vw - 25.9rem);
+    width: calc(100vw-2*$side-padding);
   }
 
   h1 {
@@ -98,12 +205,27 @@ header .menu-bar {
     color: $body-color;
     text-decoration: none;
   }
+
+  .button{
+    color: #fff;
+    background-color: red;
+    border-color: #fff;
+    float: right; 
+    text-align: right;
+    margin-right: 0;
+
+    &:hover{
+      color: red;
+      background-color: #fff !important;
+      border-color: red;
+    }
+  }
 }
 
 .button {
   margin-top: 0.1rem;
   letter-spacing: 0.04rem;
-  font-family: Arial, sans-serif;
+  font-family: "Times New Roman", serif;
   text-transform: lowercase;
   font-size: 0.8rem;
   font-weight: normal;
@@ -115,6 +237,7 @@ header .menu-bar {
   padding: 0.3rem 0.4rem;
   margin: auto 0;
   cursor: crosshair;
+  user-select: none;
 
   &:hover {
     color: #fff;
@@ -151,16 +274,67 @@ header .stats {
     margin-right: -0.2rem;
     margin-left: 0.4rem;
   }
+
+  a{
+    color: red;
+  }
 }
 
 .explanation {
   position: absolute;
-  top: $stats-bar-height;
-  left: 0;
+  height: auto;
+  width: 44vw;
+  text-align: left;
+  margin: auto;
+  top: 22vh;
   right: 0;
-  background: rgba(0, 0, 0, 0.8);
-  padding: $side-padding;
-  text-align: center;
+  left: 0;
+  background: #000;
+  border: solid 1px #fff;
+  color: #fff;
+  padding: 2rem 2.5rem 3.5rem 3rem;
+  font-family: "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 0.02rem;
+  z-index: 999;
+  /*top: $stats-bar-height;*/
+
+
+  & h1{
+  font-family: "Times New Roman", serif;
+  font-size: 1.3rem;
+  margin: 0;
+  padding-bottom: 0;
+  }
+
+  & span, p{
+  font-size: 1.3rem;
+  width: 100%;
+  padding-bottom: .5rem;
+  line-height: 145%;
+  }
+
+  & a.button{
+    color: #fff !important;
+
+    &:hover{
+      color: #000 !important;
+    }
+  }
+
+  & .button{
+    position: absolute;
+    bottom: 2rem;
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #fff;
+    font-size: 1rem;
+
+    &:hover {
+      color: #000;
+      background-color: #fff;
+    }
+  }
 }
 
 figure.gallery {
@@ -175,6 +349,7 @@ figure.gallery {
   padding-top: $header-height;
   box-sizing: border-box;
   border-right: 1px solid #000;
+  z-index: 1;
 
   .tinyfade > * {
     pointer-events: none;
@@ -189,6 +364,8 @@ figure.gallery {
       }
     }
   }
+
+
 
   @media (min-width: 800px) {
     position: fixed;
@@ -211,14 +388,20 @@ figure.gallery {
     padding: 0 $side-padding;
     box-sizing: border-box;
     font-size: 0.8rem;
-    line-height: 140%;
+    line-height: 145%;
     border-top: 1px solid #000;
+  
+  & #caption-text{
+    width: 95%;
+  }
+
   }
 }
 
 .gallery-arrow {
   color: #fff;
-  font-size: 5rem;
+  -webkit-text-stroke: 1px #000;
+  font-size: 2.8rem;
   position: absolute;
   top: 50%;
   z-index: 4;
@@ -228,11 +411,13 @@ figure.gallery {
   height: 2rem;
   line-height: 2.5rem;
   text-align: center;
-  cursor: pointer;
+  cursor: crosshair;
   user-select: none;
 
   &.left {
     left: $side-padding;
+    margin-top: 0.3rem;
+    transform: rotate(180deg) !important;
   }
 
   &.right {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "preact/hooks";
 
-const maxChapters = 4;
+const maxChapters = 9;
 
 export default ({ lastPath }) => {
   const [chapters, setChapters] = useState([]);
@@ -37,6 +37,10 @@ export default ({ lastPath }) => {
       esm={esm}
       goToNextChapter={goToNextChapter}
     /> */}
+      <figure class="gallery">
+          <figcaption>
+          </figcaption>
+      </figure>
       <main>
         <p>
           <a class="button" href={lastPath !== "/toc" ? lastPath : "/"}>
@@ -44,9 +48,10 @@ export default ({ lastPath }) => {
           </a>
         </p>
         <h1>Table of Contents</h1>
-        <ol>
+        <ol id="toc">
           {chapters.map((title, index) => {
-            const chapterNumText = index === 0 ? "" : `Chapter ${index}: `;
+            {/*const chapterNumText = index === 0 ? "" : `Chapter ${index}: `;*/}
+            const chapterNumText = index === 0 ? "" : "";
             const chapterTitle = title;
             if (index === chapters.length - 1) return null;
             return (
