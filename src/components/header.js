@@ -14,8 +14,9 @@ const Header = ({
   const voltageString = (mVBattery / 1000).toFixed(2) + "V";
   const loadString = ((mALoad * mVBattery) / 1000000).toFixed(2) + "W";
   const solarString = powerPV + "W";
-  const batteryString =
-    (((mVBattery - 10800) / (14660 - 10800)) * 100).toFixed(0) + "%";
+  const batteryPercentage = ((mVBattery - 10800) / (14660 - 10800)) * 100;
+  const isLowPower = batteryPercentage < 50;
+  const batteryString = batteryPercentage.toFixed(0) + "%";
   const VPV = mVPV / 1000;
   {
     /*
@@ -67,11 +68,15 @@ const Header = ({
           </a>
         </div>
 
-        {showExplanation && <Explanation close={closeNotice} />}
+        {showExplanation && (
+          <Explanation close={closeNotice} isLowPower={isLowPower} />
+        )}
       </div>
       <div class="menu-bar">
         <h1>
-          <a id="site-id" href="/">Pleasure in Scarcity</a>
+          <a id="site-id" href="/">
+            Pleasure in Scarcity
+          </a>
         </h1>
         {esmButton}
       </div>
@@ -81,7 +86,7 @@ const Header = ({
 
 export default Header;
 
-const Explanation = ({ close }) => {
+const Explanation = ({ close, isLowPower }) => {
   const [chapterData, setChapterData] = useState({});
   useEffect(() => {
     fetch(`/assets/chapters/999.json`)
@@ -100,7 +105,9 @@ const Explanation = ({ close }) => {
   return (
     <div class="explanation">
       <h1 dangerouslySetInnerHTML={{ __html: chapterTitle }} />
-      {chapterData.content ? <Markdown>{chapterData.content}</Markdown> : "…"}
+      <div class={`explanation-content ${isLowPower && "low-power"}`}>
+        {chapterData.content ? <Markdown>{chapterData.content}</Markdown> : "…"}
+      </div>
       <p>
         <a class="button" onClick={close}>
           Proceed to the thesis

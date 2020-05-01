@@ -33,6 +33,13 @@ export default function App(props) {
       })
       .then(function (data) {
         setServerLog(data.log);
+        console.log(
+          "Thanks for stoping by :) Here are the values from the power controller:"
+        );
+        console.log(data.log);
+        console.log(
+          "The code for this website available at https://github.com/elbotho/pleasure-in-scarcity"
+        );
       })
       .catch(function (err) {
         console.warn("Something went wrong.", err);

@@ -341,6 +341,16 @@ header .stats {
   }
 }
 
+.explanation-content {
+  .show-on-low-power {
+    display: none;
+  }
+
+  &.low-power .show-on-low-power {
+    display: block;
+  }
+}
+
 figure.gallery {
   margin: 0;
   padding: 0;
