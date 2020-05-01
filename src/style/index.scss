@@ -287,10 +287,10 @@ header .stats {
 .explanation {
   position: absolute;
   height: auto;
-  width: 44vw;
+  width: 50vw;
   text-align: left;
   margin: auto;
-  top: 22vh;
+  /*top: 22vh;*/
   right: 0;
   left: 0;
   background: #000;
@@ -301,6 +301,7 @@ header .stats {
   font-weight: normal;
   letter-spacing: 0.02rem;
   z-index: 999;
+<<<<<<< Updated upstream
   /*top: $stats_bar_height;*/
 
   & h1 {
@@ -316,6 +317,27 @@ header .stats {
     width: 100%;
     padding-bottom: 0.5rem;
     line-height: 145%;
+=======
+  top: $menu-bar-height;
+
+  ::selection {
+    background-color: #000;
+    color: #fff;
+  }
+
+  & h1{
+  font-family: "Times New Roman", serif;
+  font-size: 1.2rem;
+  margin: 0;
+  padding-bottom: 0;
+  }
+
+  & p{
+  font-size: 1.2rem;
+  width: 100%;
+  padding-bottom: .5rem;
+  line-height: 145%;
+>>>>>>> Stashed changes
   }
 
   & a.button {
