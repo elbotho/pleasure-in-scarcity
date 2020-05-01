@@ -32,11 +32,11 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
     function galleryPrev() {
       tf.prev();
     }
-    swipeDetect(
-      document.querySelector("figure.gallery"),
-      galleryNext,
-      galleryPrev
-    );
+    // swipeDetect(
+    //   document.querySelector("figure.gallery"),
+    //   galleryNext,
+    //   galleryPrev
+    // );
 
     // let thirdImage = tf.e.getElementsByTagName("img")[2];
     // tf.goto(thirdImage);
