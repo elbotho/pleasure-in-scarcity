@@ -27,7 +27,7 @@ const Header = ({
     VPV < 4
       ? "solar: off, nighttime"
       : VPV < 14
-      ? "solar: off, overcast"
+      ? "solar: off, gloomy"
       : "solar: on | " + solarString;
   const statusString =
     VPV > 14
@@ -110,7 +110,7 @@ const Explanation = ({ close, isLowPower }) => {
       </div>
       <p>
         <a class="button" onClick={close}>
-          Proceed to the thesis
+          Click here for the thesis <span style="text-transform: none;">"Finding Pleasure in Scarcity"</span>
         </a>
       </p>
     </div>
