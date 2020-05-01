@@ -26,6 +26,8 @@ export default function App(props) {
     powerPV: 0,
   });
 
+  const isClient = typeof window !== "undefined";
+
   useEffect(() => {
     fetch("/assets/data.json")
       .then(function (response) {
@@ -50,7 +52,7 @@ export default function App(props) {
     if (e.current.props.index !== undefined)
       setCurrentChapter(parseInt(e.current.props.index));
 
-    scrollTo(0, 0);
+    if (isClient) scrollTo(0, 0);
   }
 
   function onEsmButtonClick(e) {
@@ -72,8 +74,6 @@ export default function App(props) {
       route("/chapter/" + nextChapter);
     }
   }
-
-  const isClient = typeof window !== "undefined";
 
   return (
     <div id="app">
