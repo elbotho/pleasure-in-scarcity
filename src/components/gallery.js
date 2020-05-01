@@ -13,7 +13,7 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
 
   useEffect(() => {
     let tf = new Tinyfade(
-      ".tinyfade", // Element
+      "#tinyfade", // Element
       -1, // interval in ms (-1 for manual mode, default = 5000)
       300 // anim duration
     );
@@ -67,6 +67,8 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
           (images.length - 1 === 1 && lastIndex === 0))
       ) {
         goToNextChapter();
+        const current = document.querySelector("tinyfade > .tinyfade-current");
+        if (current) current.style.opacity = 0;
       }
 
       setFilesize(current);
@@ -76,7 +78,7 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
   useEffect(() => {
     setFilesize(
       document.querySelector(
-        `.tinyfade > picture[data-index="${currentIndex}"]`
+        `#tinyfade > picture[data-index="${currentIndex}"]`
       )
     );
   }, [esm]);
@@ -103,7 +105,7 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
 
   return (
     <figure class="gallery">
-      <div class="tinyfade">
+      <div id="tinyfade" class="tinyfade">
         {images.map((image, index) => {
           const img = image.image;
           const imgSrc = esm
