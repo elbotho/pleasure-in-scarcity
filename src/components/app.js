@@ -71,13 +71,13 @@ export default function App(props) {
     }
   }
 
-  // console.log(window.location.pathname);
-  // console.log("WWWW");
+  const isClient = typeof window !== "undefined";
+
   return (
     <div id="app">
       <Header
         initialShowNotice={
-          currentChapter === 0 && window.location.pathname === "/"
+          isClient && currentChapter === 0 && window.location.pathname === "/"
         }
         mVBattery={serverLog.mVBattery}
         mALoad={serverLog.mALoad}
@@ -103,7 +103,7 @@ export default function App(props) {
           esm={energySaveMode}
           goToNextChapter={goToNextChapter}
         />
-        <TOC path="/toc" lastPath={window.location.pathname} />
+        <TOC path="/toc" lastPath={isClient && window.location.pathname} />
       </Router>
     </div>
   );
