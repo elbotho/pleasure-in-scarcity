@@ -24,7 +24,7 @@ const ChapterNav = ({ currentChapter }) => {
         Table of Contents
       </a>
       
-      {currentChapter === 26 
+      {currentChapter === 27 
         ? ""
         : 
         <a
