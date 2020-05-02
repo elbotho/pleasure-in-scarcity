@@ -12,7 +12,8 @@ const Header = ({
   const [showExplanation, setShowExplanation] = useState(initialShowNotice);
 
   const voltageString = (mVBattery / 1000).toFixed(2) + "V";
-  const loadString = ((mALoad * mVBattery) / 1000000).toFixed(2) + "W";
+  const loadPower = ((mALoad * mVBattery) / 1000000).toFixed(2);
+  const loadString = loadPower + "W";
   const solarString = powerPV + "W";
   const batteryPercentage = ((mVBattery - 10800) / (13800 - 10800)) * 100;
   const isLowPower = batteryPercentage < 50;
@@ -33,9 +34,9 @@ const Header = ({
       ? "solar: off, gloomy | " + solarString
       : "solar: on | " + solarString;
   const statusString =
-    VPV > 14 
-      ? batteryString + " | status: battery charging "
-      : batteryString + " | status: battery discharging ";
+        VPV > 14 
+      ? batteryString + " | battery charging "
+      : batteryString + " | battery discharging ";
 
   function closeNotice(e) {
     e.preventDefault();
@@ -78,7 +79,7 @@ const Header = ({
       <div class="menu-bar">
         <h1>
           <a id="site-id" href="/">
-            Pleasure in Scarcity
+            Finding Pleasure in Scarcity
           </a>
         </h1>
         {esmButton}
