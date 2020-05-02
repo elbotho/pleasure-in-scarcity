@@ -136,30 +136,31 @@ h1 {
 
 #toc{
 list-style-type:none;
-font-size: 1.2rem;
-  
-  & li{
-    padding-bottom: .8rem;
-  }
+line-height: 175%;
+font-size: 1rem;
+padding-left: 0;
 
   & li a{
     color: #000;
+    text-decoration: underline
   }
+  
 
   & li:nth-child(1){
-     padding-left: 0rem;
+    font-size: 1.4rem;
   }
 
-  & li:nth-child(2),li:nth-child(5){
-     padding-left: 1rem;
+  & li:nth-child(2),li:nth-child(3),li:nth-child(17),li:nth-child(20),li:nth-child(25),li:nth-child(26){
+    font-size: 1rem;
+    padding: 1.5rem 0 0 0rem;
   }
 
-  & li:nth-child(3),li:nth-child(6),li:nth-child(7),li:nth-child(8),li:nth-child(9){
-     padding-left: 2rem;
+    & li:nth-child(4),li:nth-child(7),li:nth-child(12),li:nth-child(14),li:nth-child(18),li:nth-child(19),li:nth-child(21),li:nth-child(22),li:nth-child(23),li:nth-child(24){
+    padding: 0.4rem 0 0 1.2rem;
   }
 
-  & li:nth-child(4){
-     padding-left: 3rem;
+  & li:nth-child(5),li:nth-child(6),li:nth-child(8),li:nth-child(9),li:nth-child(10),li:nth-child(11),li:nth-child(13),li:nth-child(15),li:nth-child(16){
+    padding: 0 0 0 4rem;
   }
 }
 
@@ -194,7 +195,7 @@ header .menu-bar {
   background-color: #fff;
 
   @media (min-width: 800px) {
-    width: calc(100vw-2*$side-padding);
+    width: calc(100vw-2*#{$side-padding});
   }
 
   h1 {
@@ -373,8 +374,6 @@ figure.gallery {
     }
   }
 
-
-
   @media (min-width: 800px) {
     position: fixed;
     bottom: 0;
@@ -399,10 +398,9 @@ figure.gallery {
     line-height: 145%;
     border-top: 1px solid #000;
   
-  & #caption-text{
-    width: 95%;
-  }
-
+    & #caption-text{
+      width: 95%;
+    }
   }
 }
 
