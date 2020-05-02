@@ -114,7 +114,7 @@ const Explanation = ({ close, isLowPower }) => {
       </div>
       <p>
         <a class="button" onClick={close}>
-          Click here for the thesis <span style="text-transform: none;">"Finding Pleasure in Scarcity"</span>
+          Proceed to <span style="text-transform: none;">"Finding Pleasure in Scarcity"</span>
         </a>
       </p>
     </div>
