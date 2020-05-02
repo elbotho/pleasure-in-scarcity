@@ -14,9 +14,12 @@ const Header = ({
   const voltageString = (mVBattery / 1000).toFixed(2) + "V";
   const loadString = ((mALoad * mVBattery) / 1000000).toFixed(2) + "W";
   const solarString = powerPV + "W";
-  const batteryPercentage = ((mVBattery - 10800) / (14660 - 10800)) * 100;
+  const batteryPercentage = ((mVBattery - 10800) / (13800 - 10800)) * 100;
   const isLowPower = batteryPercentage < 50;
-  const batteryString = batteryPercentage.toFixed(0) + "%";
+  const batteryString = 
+    batteryPercentage > 99 
+    ? "100 %" 
+    : batteryPercentage.toFixed(0) + "%";
   const VPV = mVPV / 1000;
   {
     /*
@@ -31,8 +34,8 @@ const Header = ({
       : "solar: on | " + solarString;
   const statusString =
     VPV > 14 
-      ? "battery: charging " + batteryString
-      : "battery: discharging " + batteryString;
+      ? batteryString + " | status: battery charging "
+      : batteryString + " | status: battery discharging ";
 
   function closeNotice(e) {
     e.preventDefault();
