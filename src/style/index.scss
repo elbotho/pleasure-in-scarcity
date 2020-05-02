@@ -40,9 +40,19 @@ body.esm {
   }
 
   & .button {
-    color: #fff;
+    color: #000;
     border: solid 1px #fff;
-    background-color: #000;
+    background-color: #fff;
+
+    @media (min-width: 800px) {
+      background-color: #000 !important;
+      color: #fff;
+
+      &:hover {
+        color: #000 !important;
+        background-color: #fff !important;
+      }
+    }
   
       &:hover {
       color: #000;
@@ -70,7 +80,7 @@ body.esm {
   }
 
   & #esm-button{
-   background-color: red;
+   background-color: red !important;
    border-color: red;
   }
 
@@ -129,9 +139,13 @@ a {
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: normal;
   line-height: 120%;
+
+  @media (min-width: 800px) {
+    font-size: 1.4rem;
+  }
 }
 
 #toc{
@@ -256,21 +270,28 @@ header .stats {
   padding: 0 $side-padding;
   line-height: $stats-bar-height;
   text-align: right;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   display: flex;
   justify-content: space-between;
 
-  dl,
-  dd,
-  dt {
-    margin: 0;
-    padding-right: 0.5rem;
-    display: inline;
+  @media (min-width: 800px) {
+  font-size: 0.8rem;
   }
 
-  span {
-    padding-right: 1rem;
+
+  dl,
+  dd,
+  dt, span {
+    margin: 0;
+    padding-right: 0.2rem;
+    display: inline;
+
+  @media (min-width: 800px) {
+    padding-right: .6rem;
   }
+
+  }
+
 
   dt[role="img"] {
     margin-right: -0.2rem;
@@ -285,7 +306,7 @@ header .stats {
 .explanation {
   position: absolute;
   height: auto;
-  width: 50vw;
+  width: 80vw;
   text-align: left;
   margin: auto;
   /*top: 22vh;*/
@@ -294,12 +315,19 @@ header .stats {
   background: #000;
   border: solid 1px #fff;
   color: #fff;
-  padding: 2rem 2.5rem 3.5rem 3rem;
   font-family: "Times New Roman", serif;
   font-weight: normal;
   letter-spacing: 0.02rem;
   z-index: 999;
-  top: $menu-bar-height;
+  top: $menu-bar-height;  
+  padding: 4%;
+
+
+  @media (min-width: 800px) {  
+    padding: 2rem 2.5rem 3.5rem 3rem;
+    width: 50vw;
+  }
+
 
   ::selection {
     background-color: #000;
@@ -316,16 +344,15 @@ header .stats {
   & p{
   font-size: 1.2rem;
   width: 100%;
-  padding-bottom: .5rem;
+  padding-bottom: 2rem;
   line-height: 145%;
-  }
-
-  & a{
+  @media (min-width: 800px) {padding-bottom: .5rem;}
   }
 
   & a.button{
-    color: #fff !important;
-
+    color: #000 !important;
+   @media (min-width: 800px) {color:  #fff !important;}
+    
     &:hover{
       color: #000 !important;
     }
@@ -333,15 +360,23 @@ header .stats {
 
   & .button{
     position: absolute;
+    left: 4%;
+    right: 4%;
     bottom: 2rem;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff !important;
     border: solid 1px #fff;
     font-size: 1rem;
+    height: 2rem;
+    @media (min-width: 800px) {
+      height: initial; 
+      background-color: #000 !important;
+      left: initial;
+      right: initial;
 
-    &:hover {
-      color: #000;
-      background-color: #fff;
+      &:hover {
+        color: #000 !important;
+        background-color: #fff !important;
+      }
     }
   }
 }
