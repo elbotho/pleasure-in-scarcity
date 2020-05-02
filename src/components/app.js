@@ -29,7 +29,8 @@ export default function App(props) {
   const isClient = typeof window !== "undefined";
 
   useEffect(() => {
-    fetch("/assets/data.json")
+    // fetch("/assets/data.json")
+    fetch("/solarlog/solarlog.json")
       .then(function (response) {
         return response.json();
       })
