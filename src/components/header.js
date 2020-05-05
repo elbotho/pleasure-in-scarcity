@@ -30,7 +30,7 @@ const Header = ({
   const sunString =
     VPV < 4
       ? "solar: off, nighttime"
-      : VPV < 14 || powerPV < 2
+      : VPV < 14 || powerPV < 1
       ? "solar: off, gloomy | " + solarString
       : "solar: on | " + solarString;
   const statusString =
