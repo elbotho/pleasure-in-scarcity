@@ -11,7 +11,7 @@ html {
 
   ::selection {
     background-color: #fff;
-    color: #00f;
+    color: #0044ff;
   }
 }
 
@@ -37,7 +37,7 @@ body.esm {
 
   ::selection {
     background-color: #000;
-    color: #00f;
+    color: #0044ff;
   }
 
   & .button {
@@ -65,7 +65,7 @@ body.esm {
   & a{
     color: #f00;
     &:hover{
-      color: #fff !important;
+      /*color: #fff !important;*/
     }
   }
 
@@ -141,6 +141,13 @@ main {
   /*color: #f00;*/
   margin-right: 1.5rem;
 }
+
+.captionquote{
+  /*font-size: 60%;
+  vertical-align: bottom;
+*/
+  color: #0044ff;
+  }
 
 p,
 h1 {
@@ -369,7 +376,7 @@ header .stats {
 
   ::selection {
     background-color: #000;
-    color: #00f;
+    color: #0044ff;
   }
 
   & h1{
@@ -386,7 +393,7 @@ header .stats {
   }
 
   & a{
-    color: #f00 !important;
+    color: #0044ff !important;
       &:hover{
         color: #fff !important;
       }
@@ -478,6 +485,14 @@ figure.gallery {
   
     & #caption-text{
       width: 92%;
+    }
+
+    & #caption-size{
+      color: #f00;
+    }
+
+    & a{
+      color: #0044ff;
     }
   }
 }
