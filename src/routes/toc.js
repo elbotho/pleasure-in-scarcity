@@ -1,6 +1,6 @@
 import { useState, useEffect } from "preact/hooks";
 
-const maxChapters = 28;
+const maxChapters = 29;
 
 export default ({ lastPath }) => {
   const [chapters, setChapters] = useState([]);
