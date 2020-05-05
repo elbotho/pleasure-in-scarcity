@@ -20,7 +20,7 @@ export default function App(props) {
   const [currentChapter, setCurrentChapter] = useState(0);
 
   const [serverLog, setServerLog] = useState({
-    mVBattery: 0,
+    mVBattery: 12000,
     mALoad: 0,
     mVPV: 0,
     powerPV: 0,
