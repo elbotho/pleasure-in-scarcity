@@ -10,21 +10,24 @@ const ChapterNav = ({ currentChapter }) => {
               : "/chapter/" + (currentChapter - 1)
           }
         >
-          {currentChapter === 1 ? "Frontpage" 
-          : currentChapter === 2 ? "abstract" 
-          :"previous paragraph"}
-        </a>
+          {currentChapter === 1 ? "⭠ Frontpage" 
+            : currentChapter === 2 ? "⭠ Abstract" 
+            : currentChapter === 28 ? "⭠ Appendix"
+            : currentChapter === 27 ? "⭠ Thanks"
+            : "⭠ previous section"
+          }
+          </a>
       ) 
       : <a class="button toc-button" href="/chapter/1">
-        Abstract
+        Abstract ⭢
       </a> 
     }
 
      <a class="button toc-button" href="/toc">
-        Table of Contents
+        Table of Contents 
       </a>
       
-      {currentChapter === 27 
+      {currentChapter === 28 
         ? ""
         : 
         <a
@@ -35,7 +38,12 @@ const ChapterNav = ({ currentChapter }) => {
                 : "/chapter/" + (currentChapter + 1)
             }
           >
-            {currentChapter > 1 ? "next paragraph" : "start the text"}
+            {currentChapter === 27 ? "Bibliography ⭢"
+              : currentChapter === 26 ? "Appendix ⭢"
+              : currentChapter === 25 ? "Thanks ⭢"
+              : currentChapter < 2 ? "start the text ⟶"
+              : "next section ⭢" 
+            }
         </a>
       }
 
