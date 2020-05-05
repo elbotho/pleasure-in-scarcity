@@ -35,7 +35,7 @@
     },{
       "image": {
         "src": "/assets/images/23-7.jpg",
-        "caption" : "Based on ideas of DIY, accessibility and low-tech, Barnabé Chaillot's work represents a materiality of scarcity. | retrieved from https://www.youtube.com/watch?v=80PX9T_9xIE"
+        "caption" : "Based on ideas of DIY, accessibility and low-tech, Barnabé Chaillot's work represents a materiality of scarcity. <div class=\"captionquote\">retrieved from [https://www.youtube.com](https://www.youtube.com/watch?v=80PX9T_9xIE)</div>"
       }
     }
   ]

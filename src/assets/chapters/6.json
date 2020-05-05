@@ -6,12 +6,12 @@
     {
       "image": {
         "src": "/assets/images/6-1.jpg",
-        "caption": "The end of meat, but at what cost? | retrieved from https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/01/meatless-burger-1296x728-header-1296x728.jpg?w=1155&h=1528"
+        "caption": "The end of meat, but at what cost? <div class=\"captionquote\">retrieved from [https://i0.wp.com](https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/01/meatless-burger-1296x728-header-1296x728.jpg?w=1155&h=1528)</div>"
       }
     },{
       "image": {
-        "src": "/assets/images/6-3.jpg",
-        "caption": "Consumer responsibility through “responsible” or “ethical” consumption. | retrieved from https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/01/18/13/food-inc.jpg?width=1000&height=614&fit=bounds&format=pjpg&auto=webp&quality=70&crop=16:9,offset-y0.5"
+        "src": "/assets/images/6-2.jpg",
+        "caption": "Consumer responsibility through “responsible” or “ethical” consumption. <div class=\"captionquote\">retrieved from [https://static.standard.co.uk](https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/01/18/13/food-inc.jpg?width=1000&height=614&fit=bounds&format=pjpg&auto=webp&quality=70&crop=16:9,offset-y0.5)</div>"
       }
     }
   ]
