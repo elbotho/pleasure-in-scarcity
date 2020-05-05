@@ -1,12 +1,72 @@
 {
-  "title": "Producing Pleasure in scarcity",
+  "title": "Producing pleasure in scarcity",
   "chapterNum": 24,
-  "content": "",
+  "content": "<div class=\"text\">The material research accompanying this text is based on the creation of functional objects from a materiality of scarcity in order to create a collective spirit through shared moments. Aiming for the production of pleasurable experiences, it is not intended to create a service-client dynamic but rather incorporates people voluntarily in the production of pleasure. Thereby pleasure emerges through collective moments of proactive action.<br/>Being based on principles such as immediate combustion and assembled materiality with the inherent capacity to change its configuration, to adapt and to evolve, the objects are capable to harness participation. The pleasure of using them not only relates to the collectivity they produce but also to mastering their constraints and figuring out their functionalities through a tacit learning process, for example by splitting wood or lighting a fire. \n\nActing as centrepieces, these objects become distinctive anchors for participation and proactive collectivity. They become representations for a way of life, while at the same time facilitating it. Like the Kibbutz, they gather community around themselves, and like the Shakers’ furniture, they become a representation of a way of life. They are based on accessible functionality and scarce materiality, applicable in various contexts to create wellbeing, becoming productive tools of pleasure e.g. by heating, cooking or manufacturing.</div>",
   "galleryImages": [
     {
       "image": {
-        "src": "",
+        "src": "/assets/images/24-4.jpg",
         "caption": ""
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/24-1.jpg",
+        "caption": "A graphic of the rocket stove principle, based on the second law of Thermodynamics: rising hot air creates an airflow, providing the combustion with Oxygen."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/24-2.jpg",
+        "caption": "In terms of thermal efficiency (the percentage of heat energy that is transformed into work), a rocket stove largely outperforms conventional cooking equipment | source: lowtechmagazin. https://solar.lowtechmagazine.com/2019/12/too-much-combustion-too-little-fire.html"
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/24-5.jpg",
+        "caption": "November 2019. First tests to bake bread in public, with a rocket stove."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/24-6.jpg",
+        "caption": "April 2020. Success."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/24-7.jpg",
+        "caption": "December 2019. Electric energy generation with a rocket stove and a Peltier module."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/24-8.jpg",
+        "caption": "January 2020. Cooking on a rocket stove."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/24-9.jpg",
+        "caption": "February 2020. Heating water for showering, with a rocket stove."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/24-10.jpg",
+        "caption": "February 2020. Serving Hot Dogs with a mobile rocket stove."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/24-11.jpg",
+        "caption": "March 2020. Travelling to Paris to bake crêpe, with a rocket stove."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/24-12.jpg",
+        "caption": "March 2020. Collective crêpe lunch around the rocket stove."
       }
     }
   ]
