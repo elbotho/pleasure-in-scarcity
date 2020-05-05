@@ -3,6 +3,7 @@ import { Link } from "preact-router/match";
 import { useState, useEffect } from "preact/hooks";
 import Tinyfade from "../helpers/tinyfade";
 import swipeDetect from "../helpers/swipedetect";
+import Markdown from "markdown-to-jsx";
 
 //TODO: tinyfade bug with style element when using prev?
 const Gallery = ({ images, esm, goToNextChapter }) => {
@@ -152,7 +153,7 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
       </a>
       <figcaption>
         <p id="caption-text">
-          {images[currentIndex] ? images[currentIndex].image.caption : ""}
+          <Markdown>{images[currentIndex] ? images[currentIndex].image.caption : ""}</Markdown>
         </p>
         <p>
           <span id="caption-index">
