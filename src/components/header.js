@@ -15,7 +15,7 @@ const Header = ({
   const loadPower = ((mALoad * mVBattery) / 1000000).toFixed(2);
   const loadString = loadPower + "W";
   const solarString = powerPV + "W";
-  const batteryPercentage = ((mVBattery - 10800) / (13800 - 10800)) * 100;
+  const batteryPercentage = ((mVBattery - 11400) / (13800 - 11400)) * 100;
   const isLowPower = batteryPercentage < 50;
   const batteryString = 
     batteryPercentage > 99 
