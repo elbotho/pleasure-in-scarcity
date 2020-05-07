@@ -1,0 +1,33 @@
+{
+  "title": "Perpetuating behaviour with efficiency",
+  "chapterNum": 10,
+  "content": "Future visions that inform fictions like Star Trek are based on the idea that humans can exceed all limiting boundaries, “Beam me up, Scotty”. In reality, physical laws cannot be dismissed, all human actions are based on the availability of scarce resources. Such scarcity of precious resources leads to the need to economize and rationalise them. As long as humans are highly dependent on precious resources like oil, efficiency will remain a governing principle for human life on Earth. <span class=\"quote\">(Morton, 2020)</span> More efficient equals better, therefore efficiency may be called the pleasure of our time. It is the key by which we evaluate our interactions with the material world. That is why increasing efficiency is a cornerstone of most policies and agreements that address change today. <span class=\"quote\">(De Decker, 2018a)</span>\n\nApproaches based on efficiency operate on a language of numbers and data that indicate trends for certain pieces of pie-charts, camouflaging the actual perpetuation of the status quo. They thereby evoke a sentiment of progress and improvement, yet ultimately fail to convey real meaning. Efficiency-talk always tries to compare, classify or relate numbers, therefore there is a crucial need for context for it to make sense. <span class=\"quote\">(De Decker, 2018a)</span> Take the reporting around the CoVid-19 pandemic as an example, as demonstrated, statistics often do little more than reinforcing fear and uncertainty.",
+  "galleryImages": [
+    {
+      "image": {
+        "src": "/assets/images/10-1.jpg",
+        "caption": "Other than in Star Trek, in reality exceeding physical laws and limitations is not possible. <div class=\"captionquote\">retrieved from [https://3.bp.blogspot.com](https://3.bp.blogspot.com/-2fRIg1yBGdk/VPR-qQaORCI/AAAAAAAAAYc/PzmbpDaPKzs/s1600/Transporter-Star_Trek_The_Motion_Picture_1979.jpg)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/10-2.jpg",
+        "caption": "The geodesic dome as a symbol for most efficient use of resources for maximum stability. A marine helicopter carrying its own hanger. <div class=\"captionquote\">retrieved from [https://i.pinimg.com](https://i.pinimg.com/originals/da/32/f3/da32f37e598fd7ecf2650d178a333eeb.jpg)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/10-3.jpg",
+        "caption": "EU legislative labelling as an example of how efficiency is a cornerstone for evaluation <div class=\"captionquote\">retrieved from [https://slideplayer.com](https://slideplayer.com/slide/15766414/88/images/19/1.+EU+legislative+framework+for+lighting+systems+EU+Regulations+%E2%80%93+Energy+Labelling.jpg)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/10-4.jpg",
+        "caption": "Numbers fail to convey real meaning. A snapshot of global statistics related to CoVid-19 infections, 5/4/2020, 9:32:29am. <div class=\"captionquote\">retrieved from [https://coronavirus.jhu.edu](https://coronavirus.jhu.edu/map.html)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/10-5.jpg",
+        "caption": "The Guardian headlines on Coronavirus reporting. A language of numbers reinforces fear and uncertanty, while failing to convey meaning due to a lack of context. <div class=\"captionquote\">from the Guardian.</div>"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Market-based solutionism",
+  "chapterNum": 9,
+  "content": "<div class=\"text\">Big hopes are set into market-based approaches to change, like for example the European “Emission Trading System”. This cap-and-trade system was established in 2005 and is until now considered to be “a cornerstone of the EU's policy to combat climate change and its key tool for reducing greenhouse gas emissions cost-effectively”. <span class=\"quote\">(EU Emissions Trading System (EU ETS), n.d.)</span> Such approaches aim to address problems by giving market-based incentives and repressions to steer production and innovation. Another example to generate consumption that favours ecological or ethical choices are food labels such as “fairtrade” or “bio”. <br/>Approaches based on market mechanisms rely on policies regulating the market. Unfortunately, top-down policy approaches fail to supply the underlying intentions of measures. In 2019, thousands took to the streets in response to a planned tax-rise on gasoline in France, to later form the Gilets Jaunes movement. The potentially positive intention behind the rise on gasoline tax to offer an incentive for reduced gasoline usage was never considered. Simply put, regulation and policy may fail to make good intentions explicit and are thereby rather perceived as limiting and restrictive frameworks that suppress the individual freedom to make (bad) choices.</div>",
+  "galleryImages": [
+    {
+      "image": {
+        "src": "/assets/images/9-1.jpg",
+        "caption": "Buying “bio” supposedly gives incentives to producers for ecological production. <div class=\"captionquote\">retrieved from [https://scontent-amt2-1.xx.fbcdn.net](https://scontent-amt2-1.xx.fbcdn.net/v/t31.0-8/13914092_1050763664979420_8202817859205608939_o.jpg?_nc_cat=102&_nc_sid=9267fe&_nc_ohc=O9LNFdVuyVoAX81R7_J&_nc_ht=scontent-amt2-1.xx&oh=99b043618997969b0ef53e5520068f09&oe=5ED4A155)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/9-2.jpg",
+        "caption": "A German high speed train painted with a green stripe. An example for greenwashing, exploiting the market logic of responsible consumption. <div class=\"captionquote\">retrieved from [welt.de](https://www.welt.de/img/wirtschaft/mobile200079800/8331353257-ci16x9-w1200/Deutsche-Bahn-Konzernstrategie-Starke-Schiene.jpg)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/9-3.jpg",
+        "caption": "A group of Gilet Jaune protesters occupying a gas station as reaction to a tax-rise on gasoline, because the policy failed to make underlying good intentions explicit. <div class=\"captionquote\"><div class=\"captionquote\">retrieved from [https://phrnleng.rosselcdn.net](https://phrnleng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_big/2018/12/08/node_7400/727155/public/2018/12/08/B9717872184Z.1_20181208122725_000%2BG0OCIQNFH.1-0.jpg?itok=9WogMKTV>)</div>"
+      }
+    }
+  ]
+}

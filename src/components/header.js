@@ -12,11 +12,15 @@ const Header = ({
   const [showExplanation, setShowExplanation] = useState(initialShowNotice);
 
   const voltageString = (mVBattery / 1000).toFixed(2) + "V";
-  const loadString = ((mALoad * mVBattery) / 1000000).toFixed(2) + "W";
+  const loadPower = ((mALoad * mVBattery) / 1000000).toFixed(2);
+  const loadString = loadPower + "W";
   const solarString = powerPV + "W";
-  const batteryPercentage = ((mVBattery - 10800) / (14660 - 10800)) * 100;
+  const batteryPercentage = ((mVBattery - 11400) / (13800 - 11400)) * 100;
   const isLowPower = batteryPercentage < 50;
-  const batteryString = batteryPercentage.toFixed(0) + "%";
+  const batteryString = 
+    batteryPercentage > 99 
+    ? "100 %" 
+    : batteryPercentage.toFixed(0) + "%";
   const VPV = mVPV / 1000;
   {
     /*
@@ -26,13 +30,13 @@ const Header = ({
   const sunString =
     VPV < 4
       ? "solar: off, nighttime"
-      : VPV < 14
-      ? "solar: off, overcast"
+      : VPV < 14 || powerPV < 1
+      ? "solar: off, gloomy | " + solarString
       : "solar: on | " + solarString;
   const statusString =
-    VPV > 14
-      ? "battery: charging " + batteryString
-      : "battery: discharging " + batteryString;
+        VPV > 14 
+      ? batteryString + " | battery charging "
+      : batteryString + " | battery discharging ";
 
   function closeNotice(e) {
     e.preventDefault();
@@ -75,7 +79,7 @@ const Header = ({
       <div class="menu-bar">
         <h1>
           <a id="site-id" href="/">
-            Pleasure in Scarcity
+            Finding Pleasure in Scarcity
           </a>
         </h1>
         {esmButton}
@@ -110,7 +114,7 @@ const Explanation = ({ close, isLowPower }) => {
       </div>
       <p>
         <a class="button" onClick={close}>
-          Proceed to the thesis
+          Proceed to <span style="text-transform: none;">"Finding Pleasure in Scarcity"</span>
         </a>
       </p>
     </div>

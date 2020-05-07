@@ -1,0 +1,33 @@
+{
+  "title": "Belief in top-down regulation",
+  "chapterNum": 11,
+  "content": "<div class=\"text\">Top-down approaches to change are based on the presumption of “governments know best” or a “no action without policy action” mentality. Policies are a legal tool to address an issue through regulation. Like this, policies are capable of affecting large-scale and almost immediate change, as can be seen on the 2008 replacement of halogen light bulbs with energy-saving lamps to reduce energy consumption. Policymakers were expecting to see a 6-fold decrease in energy consumption for lighting. Instead, due to increased efficiency of bulbs (more efficiency = less precious resources = less cost), it increased light production by 6, thereby keeping energy consumption steady but instead aggravating the problem of light pollution. <span class=\"quote\">(Kyba, 2017)</span> This phenomenon is called the “rebound effect”, an increase in usage due to a reduction in material cost. <span class=\"quote\">(De Decker, 2018a)</span> Making things function more efficiently encourages more wasteful behaviour. Through perpetuating mechanisms and behaviours, the idea of efficiency creates a non-negotiable status quo of our current lifestyles. <span class=\"quote\">(De Decker, 2018a)</span>\n\nThe power to affect rapid and effective action through top-down control becomes apparent at the efficient handling of the CoVid-19 outbreak in China. Through its high “Capacity for governance”, meaning the power and agility to decide, the Chinese government was able to take effective and fast steps to “flatten the curve”, preventing new infections. Less controlled societies, like for example in Italy, needed much longer to take similar measures due to a bigger resistance to take hard and restrictive decisions like enforcing curfews. <br/>Whereas a rapid and even long term change may be achievable quickly in controlled societies, <span class=\"quote\">(Schmemann, 2020)</span> they are more vulnerable to wrong decisions. Powerful instances have the capacity for powerful mistakes, like US President Trump who largely impacts the US government's approach to climate change, eradicating the notion from the government's Environment Protection Agency. <span class=\"quote\">(Barron, 2018)</span> \n\nAn efficient society is a controlled society. In times of increased support for top-level governance, like for example the current pandemic, top-levels may gain excessive power to enforce control, like Hungary’s Viktor Orban who acclaimed indefinite exceptional powers and is currently ruling by decree. <span class=\"quote\">(Zalane, 2020)</span> Thought through, the creation of a controlled society may well lead to an efficient society, or even an ecological one, but it would do so at the expense of individual freedom, a picture drawn by dystopian novels. In Orwell’s “Nineteen Eighty-Four” a top-level power controls individual actions through constant surveillance and repressions. <span class=\"quote\">(Orwell, 2008)</span> Increased control through policy action comes at the expense of individual freedom. “When a man cannot choose, he ceases to be a man“, reminds us of the prison chaplain in Anthony Burgess’s dystopian novel “A Clockwork Orange”. <span class=\"quote\">(Burgess, 2013)</span> In other words, controlling behaviour does not make a person more ecological.</div>",
+  "galleryImages": [
+    {
+      "image": {
+        "src": "/assets/images/11-1.jpg",
+        "caption": "Increasing light pollution over Europe despite of more efficient LEDs. an increase in usage due to a reduction in material cost is called rebound effect. <div class=\"captionquote\">retrieved from [https://www.theguardian.com](https://www.theguardian.com/environment/2017/nov/23/nights-getting-brighter-but-not-in-a-good-way#img-1)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/11-2.jpg",
+        "caption": "In the early outbreak of CoVid-19 in China, a hospital was able to be built within 10 days due to the administrations's high capacity for governacne. <div class=\"captionquote\">retrieved from [https://i.ytimg.com](https://i.ytimg.com/vi/uVzAgu7ZqYA/maxresdefault.jpg)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/11-3.jpg",
+        "caption": "Unpopular or radical measures are easier to be taken through authoriatiran governance. <div class=\"captionquote\">retrieved from [https://cdn.cnn.com](https://cdn.cnn.com/cnnnext/dam/assets/200324092922-08-hubei-0324-super-tease.jpg)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/11-4.jpg",
+        "caption": "The impact of a top-level misconception or denial can have dire consequences. <div class=\"captionquote\">retreived from [https://www.peoplesworld.org](https://www.peoplesworld.org/wp-content/uploads/2016/12/trumpchinesetweet960x510.jpg)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/11-5.jpg",
+        "caption": "The control society of “1984” is founded on an irrational reality of war against other superstates, reinforced by mechanisms of denial called “doublethink”. <div class=\"captionquote\">from 1984 (1956). Anderson, Michael. retrieved from [https://pbs.twimg.com](https://pbs.twimg.com/media/DwOBGd9WkAAAwqx.jpg:large)</div>"
+      }
+    }
+  ]
+}

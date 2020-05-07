@@ -1,0 +1,32 @@
+{
+  "title": "Appendix: The format of a solar website",
+  "chapterNum": 27
+  ,
+  "content": "<div class=\"text\">*Energy, a scarce resource*<br/>Electric energy is an abstract concept materialised only in increasingly hidden power infrastructure. Hiding away the only remnants that link energy use to its production allows us to ignore the material reality of energy production. Electricity gets produced through electric generators, powered with huge turbines driven by force created mostly by the combustion of fossil fuels like coal. Energy gets produced in power plants far away from where it is being used, fed into the power grid that connects virtually every dwelling. When turning a switch, we tap into the flow of electrons that we call electricity. The stability of that flow relies on the balance of energy production and consumption. That means, the moment you turn on the light, somewhere far away, an electric generator has to make a few extra rounds exclusively for you.\n\n*Material reality of the Internet*<br/> Just like electricity, the Internet consists of a material reality. Whereas it is perceived as an immaterial “cloud”, it relies on energy and a constantly growing network infrastructure of data centres, submarine cables, and a growing number of user electronics, forming “the Internet”. Every byte transmitted through that network infrastructure is an electric signal. That means, the amount of data traffic on the Internet directly relates to the amount of energy consumed. In simple terms, the bigger a file, website, video, etc., the more energy is needed to access it. Its material infrastructure, an increase in data traffic and connected devices, together with increasingly resource-intensive content, make the Internet three times more energy-intensive “than all wind and solar power sources worldwide can provide.” <span class=\"quote\">(De Decker, 2018b)</span>\n\n*A website based on scarcity*<br/>Renewable energy sources are not capable of producing enough energy at all times and conditions, to serve the current needs we have become accustomed to. The only way to (make the Internet fully compatible with renewable sources of energy is by choosing to self-impose limits. <span class=\"quote\">De Decker, 2015)</span> \n\nThis website is hosted on a server that is locally powered through an off-the-grid solar system with its own energy storage. It is expected to stay online during bad weather conditions for 30 hours. During longer periods of bad weather, this website will go offline. It is located in Eindhoven, the Netherlands, with seasonally dependent daylight hours of between 7h51m and 16h38m. <span class=\"quote\">(Hoffmann, n.d.)</span> On average, Eindhoven has an annual 1604h of sun on 305 days. <span class=\"quote\">(Ministerie van Infrastructuur en Milieu, 2011)</span> \n\nThe system is charged through a 30W solar-module producing up to 100Wh per day, supplying a 260Ah lead-acid battery-module which can realistically serve a load of up to 120Wh when fully charged. The Raspberry Pi which hosts the website on a microSD card creates a load of 3 to 5 Watts (depending on the data traffic), requiring an average load of 96Wh per day. The measured power produced by the solar panels currently indicates a realistic maximum capacity of 18W and a realistic maximum production of 100Wh on a sunny day. Therefore the website is expected to go offline after a period of 30h of insufficient lighting. The availability of the website in winter will be less guaranteed than in summer, on top of that, the battery will be especially vulnerable to quick discharge on 60 days per year without sun.\n\nThe content on this website is informed by design decisions that limit and reduce data traffic. Because of limitations like image dithering, a static site, no external scripts or fonts loaded, the content can be accessed with a very reduced amount of traffic generated. Traffic on the website immediately consumes energy from the power source. By displaying system-data, the site leaves a choice to the visitor to adapt her behaviour accessing the site, regarding the availability of power. In moments of severe scarcity of energy, the visitor can help to keep the content online for a longer period of time by downloading a file for offline reading.</div>\n\nThis format of a solar website is largely inspired and influenced by the solar website [solar.lowtechmagazine.com](https://solar.lowtechmagazine.com/). Its articles around building a [lowtech server](https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website.html) informed the design choices made, both, in terms of hardware and software. \n\nThanks to [Botho](http://botho.cc/) this website come to life. Find his code for this static site on [Github](https://github.com/elbotho/pleasure-in-scarcity).",
+  "galleryImages": [
+    {
+      "image": {
+        "src": "/assets/images/27-1.jpg",
+        "caption": "The Raspberry Pi, connected to the power outlet of the MPPT solar charge controller, connected to 3 used 7.2Ah paralleled batteries from the scrapyard."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/27-3.jpg",
+        "caption": "the system is charged by one 1W and one 20W solar panel in series, tilted towards the sun on an outside shelf (which collects rainwater)."
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/27-2.jpg",
+        "caption": ""
+      }
+    },
+    {
+      "image": {
+        "src": "/assets/images/27-4.jpg",
+        "caption": ""
+      }
+    }
+  ]
+}

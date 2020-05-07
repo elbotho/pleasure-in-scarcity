@@ -1,11 +1,27 @@
 {
-  "title": "Producing Pleasure in scarcity",
+  "title": "Techno solutionism and innovation",
   "chapterNum": 8,
-  "content": "<div class=\"text\">The material research accompanying this theoretic work is based on the creation of functional objects from a materiality of scarcity in order to create a collective spirit through collective moments. Aiming for the production of pleasurable experiences, it is not intended to create a service-client dynamic but rather incorporates people voluntarily in the production of pleasure. Thereby pleasure emerges through collective moments of proactive creation.<br/>Being based on principles such as immediate combustion and assembled materiality with the inherent capacity to change, adapt and evolve, the objects are capable to harness attention, interest and participation. The pleasure of using them is related to mastering their constraints and figuring out their functionalities through a tacit learning process, for example by splitting wood or lighting a fire. \n\nThe objects become representations for a way of life, at the same time facilitating that way of life. They are based on accessible functionality and scarce materiality, applicable in various contexts to create wellbeing, becoming productive tools of pleasure e.g. by heating, cooking or manufacturing. Acting as centrepieces, the objects become distinctive anchors for participation and proactive collectivity. Like in the Kibbutz they gather community around themselves, and like the Shakers's furniture they become a representation of a way of life. </div>",
+  "content": "<div class=\"text\">Most popular approaches today that address change are based on the idea of human ingenuity being able to solve any problem. Technological progress and innovation have pushed the limits of what humanity is capable of doing. This reinforces the idea that humankind will be able to fix anything. Such solutionist approaches follow the idea of broken mechanics, implying that the planet can be fixed. Yet, as Timothy Morton points out regarding the relation of humans to their non-human environment: “It didn't ever function, ever”. <span class=\"quote\">(Morton, 2020)</span> We cannot “fix” something that never was working.\n\nIn the face of the need for massive-scale change, the assumption is that equally massive power is needed to enact it. As a result, we see the rise of billionaires like Elon Musk that supposedly can get us out of the mess we're in, promising to geoengineer the way out of the crisis – or to at least colonise a nearby planet if it fails. Techno-saviour figures like Musk are the white wizards of our time, freeing us from the responsibility to act for ourselves.<br/>Thereby, huge irrational trust is put in some genius engineer or institution to innovate and find a solution (finding an antidote, stopping glaciers from melting, dry skin, etc.). But techno optimistic solutions like antidotes or geoengineering would need to get things perfectly right, as otherwise, the consequences could be dreadful. <br/>Moreover, to solve problems techno-solutionist approaches tend to reproduce problematic dynamics, e.g. replacing cars with electric cars, instead of addressing the underlying issues of personal mobility.</div>",
   "galleryImages": [
     {
       "image": {
-        "src": "/assets/images/f.jpg"
+        "src": "/assets/images/8-1.jpg",
+        "caption": "Not even space is the limit. Technological spectacle reinforces the idea that human ingenuity is able to solve any problem. <div class=\"captionquote\">retrieved from [https://cms.qz.com](https://cms.qz.com/wp-content/uploads/2019/02/SpaceX-Falcon-9-rocket-Eshail-2-Cape-Canaveral-Kennedy-Elon-Musk.jpg?quality=75&strip=all&w=1600&h=900&crop=1)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/8-2.jpg",
+        "caption": "TIME's Person of the Year 2019, Greta Thunberg, became a leader figure for climate global climate protests <div class=\"captionquote\">retrieved from [https://assets.time.com](https://assets.time.com/poy-2019/main/img/choice-hero.jpg)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/8-3.jpg",
+        "caption": "…its most likely to be a highly infectious virus.” Private billionaire Bill Gates addressing the issue of public health, 2015. <div class=\"captionquote\">retrieved from [https://www.youtube.com](https://www.youtube.com/watch?v=6Af6b_wyiwI)</div>"
+      }
+    },{
+      "image": {
+        "src": "/assets/images/8-4.jpg",
+        "caption": "Techno solutionism and innovation are the core approach to problem solving. Prooving to be true, the global struggles against CoVid-19 focus on finding an antidote. <div class=\"captionquote\">retrieved from [https://www.youtube.com](https://www.youtube.com/watch?v=6Af6b_wyiwI)</div>"
       }
     }
   ]
