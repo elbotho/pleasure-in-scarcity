@@ -14,6 +14,8 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
   if (!images) return "…";
 
   useEffect(() => {
+    if (currentIndex !== 0) setCurrentIndex(0);
+
     setHide(false);
     if (hide) return;
 
@@ -126,11 +128,7 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
             : img.src;
           return (
             <picture key={img.title} data-index={index}>
-              <img
-                src={imgSrc}
-                alt={img.title}
-                // style={img.extraStyle}
-              />
+              <img src={imgSrc} alt={img.title} />
             </picture>
           );
         })}
@@ -153,7 +151,9 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
       </a>
       <figcaption>
         <p id="caption-text">
-          <Markdown>{images[currentIndex] ? images[currentIndex].image.caption : ""}</Markdown>
+          <Markdown>
+            {images[currentIndex] ? images[currentIndex].image.caption : ""}
+          </Markdown>
         </p>
         <p>
           <span id="caption-index">
