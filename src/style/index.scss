@@ -15,7 +15,6 @@ html {
   }
 }
 
-
 @media screen and (min-width: 1000px) {
   html {
     font-size: 18px;
@@ -54,65 +53,70 @@ body.esm {
         background-color: #fff !important;
       }
     }
-  
-      &:hover {
+
+    &:hover {
       color: #000;
       border: solid 1px #000;
       background-color: #fff;
     }
   }
 
-  & a{
+  & a {
     color: #f00;
-    &:hover{
+    &:hover {
       /*color: #fff !important;*/
     }
   }
 
-   & .gallery-arrow{
+  & .gallery-arrow {
     color: #f00 !important;
- }
+  }
 
-  & figcaption{
+  & figcaption {
     background: #000 !important;
     border-color: #fff !important;
     color: #fff !important;
   }
 
-  & figure.gallery{
+  & figure.gallery {
     border-color: #fff;
   }
 
-  & #esm-button{
-   background-color: #f00 !important;
-   border-color: #f00;
+  & #esm-button {
+    background-color: #f00 !important;
+    border-color: #f00;
   }
 
-  & .menu-bar{
+  & .menu-bar {
     border-bottom: 1px solid #fff;
     background-color: #000 !important;
 
-    & #site-id{
+    & #site-id {
       color: #fff;
     }
-
   }
 
-  & .stats{
+  & .stats {
     background-color: #f00;
     color: #000;
 
-    & a{
+    & a {
       color: #fff;
     }
   }
 
-  & #toc a{
+  & #toc a {
     color: #fff;
+    &.active {
+      font-weight: bold;
+      &:before {
+        content: "◆ ";
+      }
+    }
   }
 }
 
-#esm-button{
+#esm-button {
   font-family: Arial, sans-serif;
 }
 
@@ -133,35 +137,35 @@ main {
   cursor: ns-resize;
 }
 
-.quote{
+.quote {
   font-size: 60%;
   vertical-align: bottom;
   position: relative;
-  top:.2rem;
+  top: 0.2rem;
   /*color: #f00;*/
   margin-right: 1.5rem;
 }
 
-.captionquote{
+.captionquote {
   /*font-size: 60%;
   vertical-align: bottom;
 */
   color: #0044ff;
-  }
+}
 
 p,
 h1 {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   letter-spacing: 0.02rem;
 }
 
-.bibliography{
+.bibliography {
   font-size: 14px;
   line-height: 135%;
 
-  & p{
+  & p {
     margin: 0rem;
-    padding-bottom: .8rem;
+    padding-bottom: 0.8rem;
     padding-left: 2.4rem;
     text-indent: -2.4rem;
   }
@@ -181,44 +185,67 @@ h1 {
   }
 }
 
-#toc{
-list-style-type:none;
-line-height: 175%;
-font-size: 1rem;
-padding-left: 0;
+#toc {
+  list-style-type: none;
+  line-height: 175%;
+  font-size: 1rem;
+  padding-left: 0;
 
-  & li a{
+  & li a {
     color: #000;
-    text-decoration: underline
+    text-decoration: underline;
   }
-  
 
-  & li:nth-child(1){
+  & li:nth-child(1) {
     font-size: 1rem;
     padding: 0 0 1.2rem 0rem;
-      & a{
-        text-decoration: none;
-      }
-  }
-
-  & li:nth-child(2),li:nth-child(27),li:nth-child(28),li:nth-child(29){
-    font-size: 1rem;
-    padding: 0rem 0 0 0rem;  
-    & a{
+    & a {
       text-decoration: none;
     }
   }
 
-  & li:nth-child(3),li:nth-child(18),li:nth-child(21),li:nth-child(26){
+  & li:nth-child(2),
+  li:nth-child(27),
+  li:nth-child(28),
+  li:nth-child(29) {
+    font-size: 1rem;
+    padding: 0rem 0 0 0rem;
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  & li:nth-child(3),
+  li:nth-child(18),
+  li:nth-child(21),
+  li:nth-child(26) {
     font-size: 1rem;
     padding: 1.2rem 0 0 0rem;
   }
 
-    & li:nth-child(4),li:nth-child(8),li:nth-child(13),li:nth-child(15),li:nth-child(19),li:nth-child(20),li:nth-child(22),li:nth-child(23),li:nth-child(24),li:nth-child(25){
+  & li:nth-child(4),
+  li:nth-child(8),
+  li:nth-child(13),
+  li:nth-child(15),
+  li:nth-child(19),
+  li:nth-child(20),
+  li:nth-child(22),
+  li:nth-child(23),
+  li:nth-child(24),
+  li:nth-child(25) {
     padding: 0.4rem 0 0 1.2rem;
   }
 
-  & li:nth-child(5),li:nth-child(6),li:nth-child(7),li:nth-child(9),li:nth-child(10),li:nth-child(11),li:nth-child(12),li:nth-child(14),li:nth-child(16),li:nth-child(17){
+  & li:nth-child(5),
+  li:nth-child(6),
+  li:nth-child(7),
+  li:nth-child(9),
+  li:nth-child(10),
+  li:nth-child(11),
+  li:nth-child(12),
+  li:nth-child(14),
+  li:nth-child(16),
+  li:nth-child(17) {
     padding: 0 0 0 4rem;
   }
 }
@@ -254,7 +281,7 @@ header .menu-bar {
   background-color: #fff;
 
   @media (min-width: 800px) {
-    width: calc(100vw-2*#{$side-padding});
+    width: calc(100vw-2 *#{$side-padding});
   }
 
   h1 {
@@ -267,15 +294,15 @@ header .menu-bar {
     text-decoration: none;
   }
 
-  .button{
+  .button {
     color: #fff;
     background-color: #f00;
     border-color: #fff;
-    float: right; 
+    float: right;
     text-align: right;
     margin-right: 0;
 
-    &:hover{
+    &:hover {
       color: #f00;
       background-color: #fff !important;
       border-color: #f00;
@@ -320,30 +347,28 @@ header .stats {
   justify-content: space-between;
 
   @media (min-width: 800px) {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
   }
-
 
   dl,
   dd,
-  dt, span {
+  dt,
+  span {
     margin: 0;
     padding-right: 0.2rem;
     display: inline;
 
-  @media (min-width: 800px) {
-    padding-right: .6rem;
+    @media (min-width: 800px) {
+      padding-right: 0.6rem;
+    }
   }
-
-  }
-
 
   dt[role="img"] {
     margin-right: -0.2rem;
     margin-left: 0.4rem;
   }
 
-  a{
+  a {
     color: #fff;
   }
 }
@@ -364,51 +389,53 @@ header .stats {
   font-weight: normal;
   letter-spacing: 0.02rem;
   z-index: 999;
-  top: $menu-bar-height;  
+  top: $menu-bar-height;
   padding: 4% 4% 8% 4%;
 
-
-  @media (min-width: 800px) {  
+  @media (min-width: 800px) {
     padding: 2rem 2.5rem 3.5rem 2.5rem;
     width: 44vw;
   }
-
 
   ::selection {
     background-color: #000;
     color: #0044ff;
   }
 
-  & h1{
-  font-family: "Times New Roman", serif;
-  font-size: 1.4rem;
-  margin: 0;
-  padding-bottom: 0;
+  & h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 1.4rem;
+    margin: 0;
+    padding-bottom: 0;
   }
 
-  & p{
-  font-size: 1rem;
-  width: 100%;
-  @media (min-width: 800px) {padding-bottom: .5rem;}
+  & p {
+    font-size: 1rem;
+    width: 100%;
+    @media (min-width: 800px) {
+      padding-bottom: 0.5rem;
+    }
   }
 
-  & a{
+  & a {
     color: #0044ff !important;
-      &:hover{
-        color: #fff !important;
-      }
+    &:hover {
+      color: #fff !important;
+    }
   }
 
-  & a.button{
+  & a.button {
     color: #000 !important;
-   @media (min-width: 800px) {color:  #fff !important;}
-    
-    &:hover{
+    @media (min-width: 800px) {
+      color: #fff !important;
+    }
+
+    &:hover {
       color: #000 !important;
     }
   }
 
-  & .button{
+  & .button {
     position: absolute;
     left: 4%;
     right: 4%;
@@ -418,7 +445,7 @@ header .stats {
     font-size: 1rem;
     height: 2rem;
     @media (min-width: 800px) {
-      height: initial; 
+      height: initial;
       background-color: #000 !important;
       left: initial;
       right: initial;
@@ -482,16 +509,16 @@ figure.gallery {
     font-size: 0.8rem;
     line-height: 130%;
     border-top: 1px solid #000;
-  
-    & #caption-text{
+
+    & #caption-text {
       width: 92%;
     }
 
-    & #caption-size{
+    & #caption-size {
       color: #f00;
     }
 
-    & a{
+    & a {
       color: #0044ff;
     }
   }

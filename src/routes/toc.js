@@ -38,8 +38,7 @@ export default ({ lastPath }) => {
       goToNextChapter={goToNextChapter}
     /> */}
       <figure class="gallery">
-          <figcaption>
-          </figcaption>
+        <figcaption></figcaption>
       </figure>
       <main>
         <p>
@@ -50,16 +49,17 @@ export default ({ lastPath }) => {
         <h1>Table of Contents</h1>
         <ol id="toc">
           {chapters.map((title, index) => {
-            {/*const chapterNumText = index === 0 ? "" : `Chapter ${index}: `;*/}
-            const chapterNumText = index === 0 ? "" : "";
+            const linkHref = index === 0 ? "/" : `/chapter/${index}`;
+            const active = lastPath === linkHref;
             const chapterTitle = title;
             if (index === chapters.length - 1) return null;
             return (
               <li>
                 <a
-                  href={index === 0 ? "/" : `/chapter/${index}`}
+                  href={linkHref}
+                  class={active ? "active" : null}
                   dangerouslySetInnerHTML={{
-                    __html: chapterNumText + chapterTitle,
+                    __html: chapterTitle,
                   }}
                 ></a>
               </li>
