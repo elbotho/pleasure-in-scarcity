@@ -5,7 +5,7 @@ import Markdown from "markdown-to-jsx";
 import Gallery from "../components/gallery";
 import ChapterNav from "../components/chapternav";
 
-const Chapter = ({ index, esm, goToNextChapter }) => {
+const Chapter = ({ index, esm, goToNextChapter, goToPrevChapter }) => {
   const [chapterData, setChapterData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
@@ -34,7 +34,9 @@ const Chapter = ({ index, esm, goToNextChapter }) => {
       <Gallery
         images={chapterData.galleryImages}
         esm={esm}
+        currentChapter={index}
         goToNextChapter={goToNextChapter}
+        goToPrevChapter={goToPrevChapter}
       />
 
       <main>

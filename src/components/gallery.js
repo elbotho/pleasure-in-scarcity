@@ -6,7 +6,13 @@ import swipeDetect from "../helpers/swipedetect";
 import Markdown from "markdown-to-jsx";
 
 //TODO: tinyfade bug with style element when using prev?
-const Gallery = ({ images, esm, goToNextChapter }) => {
+const Gallery = ({
+  images,
+  esm,
+  goToNextChapter,
+  goToPrevChapter,
+  currentChapter,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [TinyFade, setTinyFade] = useState(0);
   const [hide, setHide] = useState(false);
@@ -32,7 +38,11 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
     function galleryNext() {
       tf.next();
     }
+
     function galleryPrev() {
+      if (tf.c.dataset.index === "0") {
+        goToPrevChapter();
+      }
       tf.prev();
     }
     // swipeDetect(
@@ -76,7 +86,6 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
         goToNextChapter();
         setHide(true);
       }
-
       setFilesize(current);
     });
   }, [images, hide]);
@@ -96,6 +105,9 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
 
   function onLeftArrowClick(e) {
     e.preventDefault();
+    if (TinyFade.c.dataset.index === "0") {
+      goToPrevChapter();
+    }
     TinyFade.prev();
   }
 
@@ -109,7 +121,7 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
     });
   }
 
-  if (hide)
+  if (hide) {
     return (
       <figure class="gallery">
         <div id="tinyfade" class="tinyfade">
@@ -117,7 +129,7 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
         </div>
       </figure>
     );
-
+  }
   return (
     <figure class="gallery">
       <div id="tinyfade" class="tinyfade">
@@ -133,7 +145,7 @@ const Gallery = ({ images, esm, goToNextChapter }) => {
           );
         })}
       </div>
-      {currentIndex !== 0 && (
+      {currentChapter !== 0 && currentIndex !== 0 && (
         <a
           class="gallery-arrow left"
           id="gallery-left"

@@ -76,6 +76,17 @@ export default function App(props) {
     }
   }
 
+  function goToPrevChapter() {
+    const pathParts = location.pathname.split("/");
+
+    if (pathParts[1] !== "chapter") route("/");
+    if (pathParts[1] === "chapter") {
+      const prevChapter = parseInt(pathParts[2]) - 1;
+      if (prevChapter < 1) route("/");
+      else route("/chapter/" + prevChapter);
+    }
+  }
+
   return (
     <div id="app">
       <Header
@@ -99,12 +110,14 @@ export default function App(props) {
           path="/"
           esm={energySaveMode}
           goToNextChapter={goToNextChapter}
+          goToPrevChapter={goToPrevChapter}
           index={0}
         />
         <Chapter
           path="/chapter/:index"
           esm={energySaveMode}
           goToNextChapter={goToNextChapter}
+          goToPrevChapter={goToPrevChapter}
         />
         <TOC path="/toc" lastPath={isClient && window.location.pathname} />
       </Router>
