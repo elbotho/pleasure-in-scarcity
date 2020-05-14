@@ -145,7 +145,9 @@ const Gallery = ({
           );
         })}
       </div>
-      {currentChapter !== 0 && currentIndex !== 0 && (
+      {currentChapter === 0 && currentIndex === 0 ? (
+        ""
+      ) : (
         <a
           class="gallery-arrow left"
           id="gallery-left"
